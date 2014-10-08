@@ -1,0 +1,1455 @@
+
+http://192.168.1.105/BugFree/rest/buginfos.php?
+    UserName=chenshiming
+    IsAssignMe=
+    QueryID=
+    IsMeCreate=1
+getListBySql:SELECT * FROM BugInfo  WHERE 1=1   and ProjectID  IN ('2')  and AssignedTo = 'chenshiming' and BugStatus != 'Closed' and OpenedBy = 'chenshiming' AND BugStatus != 'Closed'  ORDER BY BugID DESC  limit 0,20
+
+http://192.168.1.105/BugFree/rest/buginfos.php?
+    UserName=chenshiming
+    IsAssignMe=1
+    QueryID=
+    IsMeCreate=
+getListBySql:SELECT * FROM BugInfo  WHERE 1=1   and ProjectID  IN ('2')  and AssignedTo = 'chenshiming' and BugStatus != 'Closed' ORDER BY BugID DESC  limit 0,20
+
+http://192.168.1.105/BugFree/rest/buginfos.php?
+    UserName=chenshiming
+    IsAssignMe=
+    QueryID=
+    IsMeCreate=1
+getListBySql:SELECT * FROM BugInfo  WHERE 1=1   and ProjectID  IN ('2')  and AssignedTo = 'chenshiming' and BugStatus != 'Closed' and OpenedBy = 'chenshiming' AND BugStatus != 'Closed'  ORDER BY BugID DESC  limit 0,20
+
+http://192.168.1.105/BugFree/rest/buginfos.php?
+    UserName=chenshiming
+    IsAssignMe=
+    QueryID=1
+    IsMeCreate=
+getRowBySql:select t.* from BugQuery t where t.QueryID='1' and UserName='chenshiming'
+getListBySql:SELECT * FROM BugInfo  WHERE ( 1 And BugStatus= 'Active' ) AND ( 1 ) and ProjectID  IN ('2')  and AssignedTo = 'chenshiming' and BugStatus != 'Closed' ORDER BY BugID DESC  limit 0,20
+
+http://192.168.1.105/BugFree/rest/buginfos.php?
+    UserName=chenshiming
+    IsAssignMe=
+    QueryID=
+    IsMeCreate=1
+getListBySql:SELECT * FROM BugInfo  WHERE 1=1   and ProjectID  IN ('2')  and AssignedTo = 'chenshiming' and BugStatus != 'Closed' and OpenedBy = 'chenshiming' AND BugStatus != 'Closed'  ORDER BY BugID DESC  limit 0,20
+
+http://192.168.1.105/BugFree/rest/buginfos.php?
+    UserName=chenshiming
+    IsAssignMe=1
+    QueryID=
+    IsMeCreate=
+getListBySql:SELECT * FROM BugInfo  WHERE 1=1   and ProjectID  IN ('2')  and AssignedTo = 'chenshiming' and BugStatus != 'Closed' ORDER BY BugID DESC  limit 0,20
+
+http://192.168.1.105/BugFree/rest/buginfos.php?
+    UserName=chenshiming
+    IsAssignMe=1
+    QueryID=
+    IsMeCreate=
+getListBySql:SELECT * FROM BugInfo  WHERE 1=1   and ProjectID  IN ('2')  and AssignedTo = 'chenshiming' and BugStatus != 'Closed' ORDER BY BugID DESC  limit 0,20
+
+http://192.168.1.105/BugFree/rest/buginfos.php?
+    UserName=chenshiming
+    IsAssignMe=
+    QueryID=
+    IsMeCreate=1
+getListBySql:SELECT * FROM BugInfo  WHERE 1=1   and ProjectID  IN ('2')  and AssignedTo = 'chenshiming' and BugStatus != 'Closed' and OpenedBy = 'chenshiming' AND BugStatus != 'Closed'  ORDER BY BugID DESC  limit 0,20
+
+http://192.168.1.105/BugFree/rest/buginfos.php?
+    UserName=chenshiming
+    IsAssignMe=
+    QueryID=1
+    IsMeCreate=
+getRowBySql:select t.* from BugQuery t where t.QueryID='1' and UserName='chenshiming'
+getListBySql:SELECT * FROM BugInfo  WHERE ( 1 And BugStatus= 'Active' ) AND ( 1 ) and ProjectID  IN ('2')  and AssignedTo = 'chenshiming' and BugStatus != 'Closed' ORDER BY BugID DESC  limit 0,20
+
+http://192.168.1.105/BugFree/rest/buginfos.php?
+    UserName=chenshiming
+    IsAssignMe=1
+    QueryID=
+    IsMeCreate=
+getListBySql:SELECT * FROM BugInfo  WHERE 1=1   and ProjectID  IN ('2')  and AssignedTo = 'chenshiming' and BugStatus != 'Closed' ORDER BY BugID DESC  limit 0,20
+
+http://192.168.1.105/BugFree/rest/buginfos.php?
+    UserName=chenshiming
+    IsAssignMe=
+    QueryID=
+    IsMeCreate=1
+getListBySql:SELECT * FROM BugInfo  WHERE 1=1   and ProjectID  IN ('2')  and AssignedTo = 'chenshiming' and BugStatus != 'Closed' and OpenedBy = 'chenshiming' AND BugStatus != 'Closed'  ORDER BY BugID DESC  limit 0,20
+
+http://192.168.1.105/BugFree/rest/buginfos.php?
+    UserName=chenshiming
+    IsAssignMe=
+    QueryID=1
+    IsMeCreate=
+getRowBySql:select t.* from BugQuery t where t.QueryID='1' and UserName='chenshiming'
+getListBySql:SELECT * FROM BugInfo  WHERE ( 1 And BugStatus= 'Active' ) AND ( 1 ) and ProjectID  IN ('2')  and AssignedTo = 'chenshiming' and BugStatus != 'Closed' ORDER BY BugID DESC  limit 0,20
+
+http://127.0.0.1/bugfree/rest/buginfos.php?
+getListBySql:SELECT * FROM BugInfo  WHERE 1=1   and ProjectID  IN ('2')  and AssignedTo = 'chenshiming' and BugStatus != 'Closed' ORDER BY BugID DESC  limit 0,20
+
+http://127.0.0.11/bugfree/rest/buginfos.php?UserName=chenshiming&IsAssignMe=1
+getListBySql:SELECT * FROM BugInfo  WHERE 1=1   and ProjectID  IN ('2')  and AssignedTo = 'chenshiming' and BugStatus != 'Closed' ORDER BY BugID DESC  limit 0,20
+
+http://127.0.0.11/bugfree/rest/buginfos.php?UserName=chenshiming&IsAssignMe=1
+getListBySql:SELECT * FROM BugInfo  WHERE 1=1   and ProjectID  IN ('2')  and AssignedTo = 'chenshiming' and BugStatus != 'Closed' ORDER BY BugID DESC  limit 0,20
+
+http://127.0.0.11/bugfree/rest/buginfos.php?UserName=chenshiming&IsAssignMe=1
+getListBySql:SELECT * FROM BugInfo  WHERE 1=1   and ProjectID  IN ('2')  and AssignedTo = 'chenshiming' and BugStatus != 'Closed' ORDER BY BugID DESC  limit 0,20
+
+http://127.0.0.1/BugFree/rest/buginfos.php?UserName=chenshiming&IsAssignMe=1
+getListBySql:SELECT * FROM BugInfo  WHERE 1=1   and ProjectID  IN ('2')  and AssignedTo = 'chenshiming' and BugStatus != 'Closed' ORDER BY BugID DESC  limit 0,20
+
+http://127.0.0.1/BugFree/rest/buginfos.php?UserName=chenshiming&IsAssignMe=1
+getListBySql:SELECT * FROM BugInfo  WHERE 1=1   and ProjectID  IN ('2')  and AssignedTo = 'chenshiming' and BugStatus != 'Closed' ORDER BY BugID DESC  limit 0,20
+
+http://127.0.0.1/BugFree/rest/buginfos.php?UserName=chenshiming&IsAssignMe=1
+getListBySql:SELECT * FROM BugInfo  WHERE 1=1   and ProjectID  IN ('2')  and AssignedTo = 'chenshiming' and BugStatus != 'Closed' ORDER BY BugID DESC  limit 0,20
+
+http://127.0.0.1/BugFree/rest/buginfos.php?UserName=chenshiming&IsAssignMe=1
+getListBySql:SELECT * FROM BugInfo  WHERE 1=1   and ProjectID  IN ('2')  and AssignedTo = 'chenshiming' and BugStatus != 'Closed' ORDER BY BugID DESC  limit 0,20
+
+http://127.0.0.1/BugFree/rest/buginfos.php?UserName=chenshiming&IsAssignMe=1
+getListBySql:SELECT * FROM BugInfo  WHERE 1=1   ORDER BY BugID DESC  limit 0,20
+
+http://127.0.0.1/BugFree/rest/buginfos.php?UserName=chenshiming&IsAssignMe=1
+getListBySql:SELECT * FROM BugInfo  WHERE 1=1   ORDER BY BugID DESC  limit 0,20
+
+http://127.0.0.1/BugFree/rest/buginfos.php?UserName=chenshiming&IsAssignMe=1
+getListBySql:SELECT * FROM BugInfo  WHERE 1=1   ORDER BY BugID DESC  limit 0,20
+
+http://127.0.0.1/BugFree/rest/resolveBug2.php?bugId=0000009&userName=chenshiming&Resolution=Fixed&notes=1
+
+http://127.0.0.1/BugFree/rest/resolveBug2.php?bugId=0000009&userName=chenshiming&Resolution=Fixed&notes=1
+querySql:
+
+http://127.0.0.1/BugFree/rest/resolveBug2.php?bugId=0000009&userName=chenshiming&Resolution=Fixed&notes=1
+querySql:
+
+http://127.0.0.1/BugFree/rest/resolveBug2.php?bugId=0000009&userName=chenshiming&Resolution=Fixed&notes=1
+querySql:
+
+http://127.0.0.1/BugFree/rest/resolveBug2.php?bugId=0000009&userName=chenshiming&Resolution=Fixed&notes=1
+querySql:
+
+http://127.0.0.1/BugFree/rest/resolveBug2.php?bugId=0000009&userName=chenshiming&Resolution=Fixed&notes=1
+querySql:
+
+http://127.0.0.1/BugFree/rest/resolveBug2.php?bugId=0000009&userName=chenshiming&Resolution=Fixed&notes=1
+querySql:
+
+http://127.0.0.1/BugFree/rest/resolveBug2.php?bugId=0000009&userName=chenshiming&Resolution=Fixed&notes=1
+querySql:
+
+http://127.0.0.1/BugFree/rest/resolveBug2.php?bugId=0000009&userName=chenshiming&Resolution=Fixed&notes=1
+querySql:
+
+http://127.0.0.1/BugFree/rest/resolveBug2.php?bugId=0000009&userName=chenshiming&Resolution=Fixed&notes=1
+querySql:
+
+http://127.0.0.1/BugFree/rest/resolveBug2.php?bugId=0000009&userName=chenshiming&Resolution=Fixed&notes=1
+querySql:
+
+http://127.0.0.1/BugFree/rest/resolveBug2.php?bugId=0000009&userName=chenshiming&Resolution=Fixed&notes=1
+querySql:
+
+http://127.0.0.1/BugFree/rest/resolveBug2.php?bugId=0000009&userName=chenshiming&Resolution=Fixed&notes=2
+querySql:
+
+http://127.0.0.1/BugFree/rest/resolveBug2.php?bugId=0000009&userName=chenshiming&Resolution=Fixed&notes=2
+querySql:
+
+http://127.0.0.1/BugFree/rest/resolveBug2.php?bugId=0000009&userName=chenshiming&Resolution=Fixed&notes=3
+querySql:
+
+http://127.0.0.1/BugFree/rest/resolveBug2.php?bugId=0000009&userName=chenshiming&Resolution=Fixed&notes=4
+querySql:
+
+http://127.0.0.1/BugFree/rest/resolveBug2.php?bugId=0000009&userName=chenshiming&Resolution=Fixed&notes=4
+
+http://127.0.0.1/BugFree/rest/resolveBug2.php?bugId=0000009&userName=chenshiming&Resolution=Fixed&notes=4
+
+http://127.0.0.1/BugFree/rest/resolveBug2.php?bugId=0000009&userName=chenshiming&Resolution=Fixed&notes=4
+
+http://127.0.0.1/BugFree/rest/resolveBug2.php?bugId=0000009&userName=chenshiming&Resolution=Fixed&notes=4
+
+http://127.0.0.1/BugFree/rest/resolveBug2.php?bugId=0000009&userName=chenshiming&Resolution=Fixed&notes=4
+querySql:UPDATE BugInfo SET BugStatus   = 'Resolved',
+	                           AssignedTo      = OpenedBy,
+	                           AssignedDate    = now(),
+	                           ResolvedBy      = 'chenshiming',
+	                           Resolution      = '',
+	                           ResolvedDate    = now(),
+	                           LastEditedBy    = 'chenshiming',
+	                           LastEditedDate  = now()
+	                     WHERE BugID           = '0000009'
+
+http://127.0.0.1/BugFree/rest/resolveBug2.php?bugId=0000009&userName=chenshiming&Resolution=Fixed&notes=5
+querySql:UPDATE BugInfo SET BugStatus   = 'Resolved',
+	                           AssignedTo      = OpenedBy,
+	                           AssignedDate    = now(),
+	                           ResolvedBy      = 'chenshiming',
+	                           Resolution      = '',
+	                           ResolvedDate    = now(),
+	                           LastEditedBy    = 'chenshiming',
+	                           LastEditedDate  = now()
+	                     WHERE BugID           = '0000009'
+
+http://127.0.0.1/BugFree/rest/resolveBug2.php?bugId=0000009&userName=chenshiming&Resolution=Fixed&notes=5
+
+http://127.0.0.1/BugFree/rest/resolveBug2.php?bugId=0000009&userName=chenshiming&Resolution=Fixed&notes=5
+
+http://127.0.0.1/BugFree/rest/resolveBug2.php?bugId=0000009&userName=chenshiming&Resolution=Fixed&notes=5
+
+http://127.0.0.1/BugFree/rest/resolveBug2.php?bugId=0000009&userName=chenshiming&resolution=Fixed&notes=3
+
+http://127.0.0.1/BugFree/rest/resolveBug2.php?bugId=0000009&userName=chenshiming&resolution=Fixed&notes=3
+querySql:UPDATE BugInfo SET BugStatus   = 'Resolved',
+	                           AssignedTo      = OpenedBy,
+	                           AssignedDate    = now(),
+	                           ResolvedBy      = 'chenshiming',
+	                           Resolution      = 'Fixed',
+	                           ResolvedDate    = now(),
+	                           LastEditedBy    = 'chenshiming',
+	                           LastEditedDate  = now()
+	                     WHERE BugID           = '0000009'
+
+http://127.0.0.1/BugFree/rest/resolveBug2.php?bugId=0000009&userName=chenshiming&resolution=Fixed&notes=3
+querySql:UPDATE BugInfo SET BugStatus   = 'Resolved',
+	                           AssignedTo      = OpenedBy,
+	                           AssignedDate    = now(),
+	                           ResolvedBy      = 'chenshiming',
+	                           Resolution      = 'Fixed',
+	                           ResolvedDate    = now(),
+	                           LastEditedBy    = 'chenshiming',
+	                           LastEditedDate  = now()
+	                     WHERE BugID           = '0000009'
+
+http://192.168.1.101/BugFree/rest/buginfos2.php?
+getListBySql:SELECT (SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToRealUserName,t.* FROM BugInfo t WHERE 1=1   ORDER BY BugID DESC  limit 0,
+
+http://192.168.1.101/BugFree/rest/buginfos2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryServiceListSpModel
+    pageIndex=1
+    pageSize=8
+    _SERVICE_=buginfos2.php
+getListBySql:SELECT (SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToRealUserName,t.* FROM BugInfo t WHERE 1=1   ORDER BY BugID DESC  limit 0,8
+
+http://192.168.1.101/BugFree/rest/buginfos2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryServiceListSpModel
+    pageIndex=2
+    pageSize=8
+    _SERVICE_=buginfos2.php
+getListBySql:SELECT (SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToRealUserName,t.* FROM BugInfo t WHERE 1=1   ORDER BY BugID DESC  limit 8,8
+
+http://192.168.1.101/BugFree/rest/buginfo2.php?
+    bugId=0000007
+    class=class com.sprcore.android.mbf.helper.model.GetBuginfoSpModel
+    _SERVICE_=buginfo2.php
+getRowBySql:SELECT t.*,(SELECT max(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToUserName FROM BugInfo t where BugID='0000007'
+getListBySql:SELECT t.*,(SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.UserName) RealUserName FROM BugHistory t where BugID='0000007'
+
+http://192.168.1.101/BugFree/rest/buginfos2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryServiceListSpModel
+    pageIndex=2
+    pageSize=8
+    _SERVICE_=buginfos2.php
+getListBySql:SELECT (SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToRealUserName,t.* FROM BugInfo t WHERE 1=1   ORDER BY BugID DESC  limit 8,8
+
+http://192.168.1.101/BugFree/rest/buginfo2.php?
+    bugId=0000008
+    class=class com.sprcore.android.mbf.helper.model.GetBuginfoSpModel
+    _SERVICE_=buginfo2.php
+getRowBySql:SELECT t.*,(SELECT max(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToUserName FROM BugInfo t where BugID='0000008'
+getListBySql:SELECT t.*,(SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.UserName) RealUserName FROM BugHistory t where BugID='0000008'
+
+http://192.168.1.101/BugFree/rest/buginfos2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryServiceListSpModel
+    pageIndex=3
+    pageSize=8
+    _SERVICE_=buginfos2.php
+getListBySql:SELECT (SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToRealUserName,t.* FROM BugInfo t WHERE 1=1   ORDER BY BugID DESC  limit 16,8
+
+http://192.168.1.101/BugFree/rest/buginfos2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryServiceListSpModel
+    pageIndex=3
+    pageSize=8
+    _SERVICE_=buginfos2.php
+getListBySql:SELECT (SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToRealUserName,t.* FROM BugInfo t WHERE 1=1   ORDER BY BugID DESC  limit 16,8
+
+http://192.168.1.101/BugFree/rest/buginfos2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryServiceListSpModel
+    pageIndex=1
+    pageSize=8
+    _SERVICE_=buginfos2.php
+getListBySql:SELECT (SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToRealUserName,t.* FROM BugInfo t WHERE 1=1   ORDER BY BugID DESC  limit 0,8
+
+http://192.168.1.101/BugFree/rest/buginfos2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryServiceListSpModel
+    pageIndex=1
+    pageSize=8
+    _SERVICE_=buginfos2.php
+getListBySql:SELECT (SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToRealUserName,t.* FROM BugInfo t WHERE 1=1   ORDER BY BugID DESC  limit 0,8
+
+http://192.168.1.101/BugFree/rest/buginfo2.php?
+    bugId=0000008
+    class=class com.sprcore.android.mbf.helper.model.GetBuginfoSpModel
+    _SERVICE_=buginfo2.php
+getRowBySql:SELECT t.*,(SELECT max(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToUserName FROM BugInfo t where BugID='0000008'
+getListBySql:SELECT t.*,(SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.UserName) RealUserName FROM BugHistory t where BugID='0000008'
+
+http://192.168.1.101/BugFree/rest/buginfos2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryServiceListSpModel
+    pageIndex=1
+    pageSize=8
+    _SERVICE_=buginfos2.php
+getListBySql:SELECT (SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToRealUserName,t.* FROM BugInfo t WHERE 1=1   ORDER BY BugID DESC  limit 0,8
+
+http://192.168.1.101/BugFree/rest/buginfo2.php?
+    bugId=0000008
+    class=class com.sprcore.android.mbf.helper.model.GetBuginfoSpModel
+    _SERVICE_=buginfo2.php
+getRowBySql:SELECT t.*,(SELECT max(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToUserName FROM BugInfo t where BugID='0000008'
+getListBySql:SELECT t.*,(SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.UserName) RealUserName FROM BugHistory t where BugID='0000008'
+
+http://192.168.1.101/BugFree/rest/buginfos2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryServiceListSpModel
+    pageIndex=1
+    pageSize=8
+    _SERVICE_=buginfos2.php
+getListBySql:SELECT (SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToRealUserName,t.* FROM BugInfo t WHERE 1=1   ORDER BY BugID DESC  limit 0,8
+
+http://192.168.1.101/BugFree/rest/buginfos2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryServiceListSpModel
+    isMeCreate=1
+    pageIndex=1
+    pageSize=8
+    _SERVICE_=buginfos2.php
+getListBySql:SELECT (SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToRealUserName,t.* FROM BugInfo t WHERE 1=1   and OpenedBy = '' AND BugStatus != 'Closed'  ORDER BY BugID DESC  limit 0,8
+
+http://192.168.1.101/BugFree/rest/buginfo2.php?
+    bugId=0000008
+    class=class com.sprcore.android.mbf.helper.model.GetBuginfoSpModel
+    _SERVICE_=buginfo2.php
+getRowBySql:SELECT t.*,(SELECT max(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToUserName FROM BugInfo t where BugID='0000008'
+getListBySql:SELECT t.*,(SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.UserName) RealUserName FROM BugHistory t where BugID='0000008'
+
+http://192.168.1.101/BugFree/rest/buginfos2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryServiceListSpModel
+    pageIndex=1
+    pageSize=8
+    _SERVICE_=buginfos2.php
+getListBySql:SELECT (SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToRealUserName,t.* FROM BugInfo t WHERE 1=1   ORDER BY BugID DESC  limit 0,8
+
+http://192.168.1.101/BugFree/rest/buginfos2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryServiceListSpModel
+    isMeCreate=1
+    pageIndex=1
+    pageSize=8
+    _SERVICE_=buginfos2.php
+getListBySql:SELECT (SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToRealUserName,t.* FROM BugInfo t WHERE 1=1   and OpenedBy = '' AND BugStatus != 'Closed'  ORDER BY BugID DESC  limit 0,8
+
+http://192.168.1.101/BugFree/rest/buginfos2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryServiceListSpModel
+    pageIndex=1
+    pageSize=8
+    _SERVICE_=buginfos2.php
+getListBySql:SELECT (SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToRealUserName,t.* FROM BugInfo t WHERE 1=1   ORDER BY BugID DESC  limit 0,8
+
+http://192.168.1.101/BugFree/rest/buginfo2.php?
+    bugId=0000008
+    class=class com.sprcore.android.mbf.helper.model.GetBuginfoSpModel
+    _SERVICE_=buginfo2.php
+getRowBySql:SELECT t.*,(SELECT max(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToUserName FROM BugInfo t where BugID='0000008'
+getListBySql:SELECT t.*,(SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.UserName) RealUserName FROM BugHistory t where BugID='0000008'
+
+http://192.168.1.101/BugFree/rest/buginfos2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryServiceListSpModel
+    pageIndex=1
+    pageSize=8
+    _SERVICE_=buginfos2.php
+getListBySql:SELECT (SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToRealUserName,t.* FROM BugInfo t WHERE 1=1   ORDER BY BugID DESC  limit 0,8
+
+http://192.168.1.101/BugFree/rest/buginfos2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryServiceListSpModel
+    isMeCreate=1
+    pageIndex=1
+    pageSize=8
+    _SERVICE_=buginfos2.php
+getListBySql:SELECT (SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToRealUserName,t.* FROM BugInfo t WHERE 1=1   and OpenedBy = '' AND BugStatus != 'Closed'  ORDER BY BugID DESC  limit 0,8
+
+http://192.168.1.101/BugFree/rest/buginfo2.php?
+    bugId=0000008
+    class=class com.sprcore.android.mbf.helper.model.GetBuginfoSpModel
+    _SERVICE_=buginfo2.php
+getRowBySql:SELECT t.*,(SELECT max(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToUserName FROM BugInfo t where BugID='0000008'
+getListBySql:SELECT t.*,(SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.UserName) RealUserName FROM BugHistory t where BugID='0000008'
+
+http://192.168.1.101/BugFree/rest/resolveBug2.php?
+    bugId=0000008
+    class=class com.sprcore.android.mbf.helper.model.ResolveBugSpModel
+    notes=xxx
+    resolution=Fixed
+    _SERVICE_=resolveBug2.php
+
+http://192.168.1.101/BugFree/rest/buginfo2.php?
+    bugId=0000008
+    class=class com.sprcore.android.mbf.helper.model.GetBuginfoSpModel
+    _SERVICE_=buginfo2.php
+getRowBySql:SELECT t.*,(SELECT max(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToUserName FROM BugInfo t where BugID='0000008'
+getListBySql:SELECT t.*,(SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.UserName) RealUserName FROM BugHistory t where BugID='0000008'
+
+http://192.168.1.101/BugFree/rest/resolveBug2.php?
+    bugId=0000008
+    class=class com.sprcore.android.mbf.helper.model.ResolveBugSpModel
+    notes=xxx
+    resolution=Fixed
+    _SERVICE_=resolveBug2.php
+
+http://192.168.1.101/BugFree/rest/resolveBug2.php?
+    bugId=0000008
+    class=class com.sprcore.android.mbf.helper.model.ResolveBugSpModel
+    notes=xxx
+    resolution=Fixed
+    _SERVICE_=resolveBug2.php
+
+http://192.168.1.101/BugFree/rest/buginfos2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryServiceListSpModel
+    pageIndex=1
+    pageSize=8
+    _SERVICE_=buginfos2.php
+getListBySql:SELECT (SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToRealUserName,t.* FROM BugInfo t WHERE 1=1   ORDER BY BugID DESC  limit 0,8
+
+http://192.168.1.101/BugFree/rest/buginfo2.php?
+    bugId=0000007
+    class=class com.sprcore.android.mbf.helper.model.GetBuginfoSpModel
+    _SERVICE_=buginfo2.php
+getRowBySql:SELECT t.*,(SELECT max(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToUserName FROM BugInfo t where BugID='0000007'
+getListBySql:SELECT t.*,(SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.UserName) RealUserName FROM BugHistory t where BugID='0000007'
+
+http://192.168.1.101/BugFree/rest/buginfos2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryServiceListSpModel
+    pageIndex=1
+    pageSize=8
+    _SERVICE_=buginfos2.php
+getListBySql:SELECT (SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToRealUserName,t.* FROM BugInfo t WHERE 1=1   ORDER BY BugID DESC  limit 0,8
+
+http://192.168.1.101/BugFree/rest/dologin2.php?
+    class=class com.sprcore.android.mbf.helper.model.DoCheckLoginSpModel
+    userName=chenshiming
+    userPassword=password
+    _SERVICE_=dologin2.php
+
+http://192.168.1.101/BugFree/rest/dologin2.php?
+    class=class com.sprcore.android.mbf.helper.model.DoCheckLoginSpModel
+    userName=chenshiming
+    userPassword=password
+    _SERVICE_=dologin2.php
+
+http://192.168.1.101/BugFree/rest/dologin2.php?
+    class=class com.sprcore.android.mbf.helper.model.DoCheckLoginSpModel
+    userName=chenshiming
+    userPassword=password
+    _SERVICE_=dologin2.php
+
+http://192.168.1.101/BugFree/rest/dologin2.php?userName=chenshiming&userPassword=password
+
+http://192.168.1.101/BugFree/rest/dologin2.php?userName=chenshiming&userPassword=password
+
+http://192.168.1.101/BugFree/rest/dologin2.php?userName=chenshiming&userPassword=password
+
+http://192.168.1.101/BugFree/rest/dologin2.php?userName=chenshiming&userPassword=password
+
+http://192.168.1.101/BugFree/rest/dologin2.php?userName=chenshiming&userPassword=password
+
+http://192.168.1.101/BugFree/rest/dologin2.php?userName=chenshiming&userPassword=password
+
+http://192.168.1.101/BugFree/rest/dologin2.php?userName=chenshiming&userPassword=password
+
+http://192.168.1.101/BugFree/rest/dologin2.php?userName=chenshiming&userPassword=password
+
+http://192.168.1.101/BugFree/rest/dologin2.php?
+    class=class com.sprcore.android.mbf.helper.model.DoCheckLoginSpModel
+    userName=chenshiming
+    userPassword=password
+    _SERVICE_=dologin2.php
+
+http://192.168.1.101/BugFree/rest/buginfos2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryServiceListSpModel
+    pageIndex=1
+    pageSize=8
+    _SERVICE_=buginfos2.php
+getListBySql:SELECT (SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToRealUserName,t.* FROM BugInfo t WHERE 1=1   ORDER BY BugID DESC  limit 0,8
+
+http://192.168.1.101/BugFree/rest/buginfo2.php?
+    bugId=0000005
+    class=class com.sprcore.android.mbf.helper.model.GetBuginfoSpModel
+    _SERVICE_=buginfo2.php
+getRowBySql:SELECT t.*,(SELECT max(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToUserName FROM BugInfo t where BugID='0000005'
+getListBySql:SELECT t.*,(SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.UserName) RealUserName FROM BugHistory t where BugID='0000005'
+
+http://192.168.1.101/BugFree/rest/buginfos2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryServiceListSpModel
+    pageIndex=1
+    pageSize=8
+    _SERVICE_=buginfos2.php
+getListBySql:SELECT (SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToRealUserName,t.* FROM BugInfo t WHERE 1=1   ORDER BY BugID DESC  limit 0,8
+
+http://192.168.1.101/BugFree/rest/dologin2.php?
+    class=class com.sprcore.android.mbf.helper.model.DoCheckLoginSpModel
+    userName=chenshiming
+    userPassword=password
+    _SERVICE_=dologin2.php
+
+http://192.168.1.101/BugFree/rest/dologin2.php?
+    class=class com.sprcore.android.mbf.helper.model.DoCheckLoginSpModel
+    userName=chenshiming
+    userPassword=password
+    _SERVICE_=dologin2.php
+
+http://192.168.1.101/BugFree/rest/dologin2.php?
+    class=class com.sprcore.android.mbf.helper.model.DoCheckLoginSpModel
+    userName=chenshiming
+    userPassword=password
+    _SERVICE_=dologin2.php
+
+http://192.168.1.101/BugFree/rest/dologin2.php?
+    class=class com.sprcore.android.mbf.helper.model.DoCheckLoginSpModel
+    userName=chenshiming
+    userPassword=password
+    _SERVICE_=dologin2.php
+
+http://192.168.1.101/BugFree/rest/dologin2.php?
+    class=class com.sprcore.android.mbf.helper.model.DoCheckLoginSpModel
+    userName=chenshiming
+    userPassword=password
+    _SERVICE_=dologin2.php
+
+http://192.168.1.101/BugFree/rest/dologin2.php?
+    class=class com.sprcore.android.mbf.helper.model.DoCheckLoginSpModel
+    userName=chenshiming
+    userPassword=password
+    _SERVICE_=dologin2.php
+
+http://192.168.1.101/BugFree/rest/dologin2.php?
+    class=class com.sprcore.android.mbf.helper.model.DoCheckLoginSpModel
+    userName=chenshiming
+    userPassword=password
+    _SERVICE_=dologin2.php
+
+http://192.168.1.101/BugFree/rest/buginfos2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryServiceListSpModel
+    pageIndex=1
+    pageSize=8
+    _SERVICE_=buginfos2.php
+getListBySql:SELECT (SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToRealUserName,t.* FROM BugInfo t WHERE 1=1   ORDER BY BugID DESC  limit 0,8
+
+http://192.168.1.101/BugFree/rest/buginfos2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryServiceListSpModel
+    pageIndex=1
+    pageSize=8
+    _SERVICE_=buginfos2.php
+getListBySql:SELECT (SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToRealUserName,t.* FROM BugInfo t WHERE 1=1   ORDER BY BugID DESC  limit 0,8
+
+http://192.168.1.101/BugFree/rest/buginfos2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryServiceListSpModel
+    pageIndex=1
+    pageSize=8
+    _SERVICE_=buginfos2.php
+getListBySql:SELECT (SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToRealUserName,t.* FROM BugInfo t WHERE 1=1   ORDER BY BugID DESC  limit 0,8
+
+http://192.168.1.101/BugFree/rest/dologin2.php?
+    class=class com.sprcore.android.mbf.helper.model.DoCheckLoginSpModel
+    userName=chenshiming
+    userPassword=password
+    _SERVICE_=dologin2.php
+
+http://192.168.1.101/BugFree/rest/buginfos2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryServiceListSpModel
+    pageIndex=1
+    pageSize=8
+    _SERVICE_=buginfos2.php
+getListBySql:SELECT (SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToRealUserName,t.* FROM BugInfo t WHERE 1=1   ORDER BY BugID DESC  limit 0,8
+
+http://192.168.1.101/BugFree/rest/buginfos2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryServiceListSpModel
+    pageIndex=1
+    pageSize=8
+    _SERVICE_=buginfos2.php
+getListBySql:SELECT (SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToRealUserName,t.* FROM BugInfo t WHERE 1=1   ORDER BY BugID DESC  limit 0,8
+
+http://192.168.1.101/BugFree/rest/buginfo2.php?
+    bugId=0000008
+    class=class com.sprcore.android.mbf.helper.model.GetBuginfoSpModel
+    _SERVICE_=buginfo2.php
+getRowBySql:SELECT t.*,(SELECT max(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToUserName FROM BugInfo t where BugID='0000008'
+getListBySql:SELECT t.*,(SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.UserName) RealUserName FROM BugHistory t where BugID='0000008'
+
+http://192.168.1.101/BugFree/rest/resolveBug2.php?
+    bugId=0000008
+    class=class com.sprcore.android.mbf.helper.model.ResolveBugSpModel
+    notes=xxx
+    resolution=Fixed
+    userName=chenshiming
+    _SERVICE_=resolveBug2.php
+querySql:UPDATE BugInfo SET BugStatus   = 'Resolved',
+	                           AssignedTo      = OpenedBy,
+	                           AssignedDate    = now(),
+	                           ResolvedBy      = 'chenshiming',
+	                           Resolution      = 'Fixed',
+	                           ResolvedDate    = now(),
+	                           LastEditedBy    = 'chenshiming',
+	                           LastEditedDate  = now()
+	                     WHERE BugID           = '0000008'
+
+http://127.0.0.1/BugFree/rest/resolveBug2.php?bugId=0000009&userName=chenshiming&resolution=Fixed&notes=3
+querySql:UPDATE BugInfo SET BugStatus   = 'Resolved',
+	                           AssignedTo      = OpenedBy,
+	                           AssignedDate    = now(),
+	                           ResolvedBy      = 'chenshiming',
+	                           Resolution      = 'Fixed',
+	                           ResolvedDate    = now(),
+	                           LastEditedBy    = 'chenshiming',
+	                           LastEditedDate  = now()
+	                     WHERE BugID           = '0000009'
+
+http://127.0.0.1/BugFree/rest/resolveBug2.php?bugId=0000008&userName=chenshiming&resolution=Fixed&notes=3
+querySql:UPDATE BugInfo SET BugStatus   = 'Resolved',
+	                           AssignedTo      = OpenedBy,
+	                           AssignedDate    = now(),
+	                           ResolvedBy      = 'chenshiming',
+	                           Resolution      = 'Fixed',
+	                           ResolvedDate    = now(),
+	                           LastEditedBy    = 'chenshiming',
+	                           LastEditedDate  = now()
+	                     WHERE BugID           = '0000008'
+
+http://127.0.0.1/BugFree/rest/resolveBug2.php?bugId=0000008&userName=chenshiming&resolution=Fixed&notes=xxx
+querySql:UPDATE BugInfo SET BugStatus   = 'Resolved',
+	                           AssignedTo      = OpenedBy,
+	                           AssignedDate    = now(),
+	                           ResolvedBy      = 'chenshiming',
+	                           Resolution      = 'Fixed',
+	                           ResolvedDate    = now(),
+	                           LastEditedBy    = 'chenshiming',
+	                           LastEditedDate  = now()
+	                     WHERE BugID           = '0000008'
+
+http://127.0.0.1/BugFree/rest/resolveBug2.php?bugId=0000008&userName=chenshiming&resolution=Fixed&notes=xxx
+querySql:UPDATE BugInfo SET BugStatus   = 'Resolved',
+	                           AssignedTo      = OpenedBy,
+	                           AssignedDate    = now(),
+	                           ResolvedBy      = 'chenshiming',
+	                           Resolution      = 'Fixed',
+	                           ResolvedDate    = now(),
+	                           LastEditedBy    = 'chenshiming',
+	                           LastEditedDate  = now()
+	                     WHERE BugID           = '0000008'
+
+http://127.0.0.1/BugFree/rest/resolveBug2.php?bugId=0000008&userName=chenshiming&resolution=Fixed&notes=xxx
+querySql:UPDATE BugInfo SET BugStatus   = 'Resolved',
+	                           AssignedTo      = OpenedBy,
+	                           AssignedDate    = now(),
+	                           ResolvedBy      = 'chenshiming',
+	                           Resolution      = 'Fixed',
+	                           ResolvedDate    = now(),
+	                           LastEditedBy    = 'chenshiming',
+	                           LastEditedDate  = now()
+	                     WHERE BugID           = '0000008'
+
+http://127.0.0.1/BugFree/rest/resolveBug2.php?bugId=0000008&userName=chenshiming&resolution=Fixed&notes=xxx
+querySql:UPDATE BugInfo SET BugStatus   = 'Resolved',
+	                           AssignedTo      = OpenedBy,
+	                           AssignedDate    = now(),
+	                           ResolvedBy      = 'chenshiming',
+	                           Resolution      = 'Fixed',
+	                           ResolvedDate    = now(),
+	                           LastEditedBy    = 'chenshiming',
+	                           LastEditedDate  = now()
+	                     WHERE BugID           = '0000008'
+
+http://127.0.0.1/BugFree/rest/resolveBug2.php?bugId=0000008&userName=chenshiming&resolution=Fixed&notes=xxx
+querySql:UPDATE BugInfo SET BugStatus   = 'Resolved',
+	                           AssignedTo      = OpenedBy,
+	                           AssignedDate    = now(),
+	                           ResolvedBy      = 'chenshiming',
+	                           Resolution      = 'Fixed',
+	                           ResolvedDate    = now(),
+	                           LastEditedBy    = 'chenshiming',
+	                           LastEditedDate  = now()
+	                     WHERE BugID           = '0000008'
+
+http://192.168.1.101/BugFree/rest/buginfo2.php?
+    bugId=0000008
+    class=class com.sprcore.android.mbf.helper.model.GetBuginfoSpModel
+    _SERVICE_=buginfo2.php
+getRowBySql:SELECT t.*,(SELECT max(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToUserName FROM BugInfo t where BugID='0000008'
+getListBySql:SELECT t.*,(SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.UserName) RealUserName FROM BugHistory t where BugID='0000008'
+
+http://192.168.1.101/BugFree/rest/resolveBug2.php?
+    bugId=0000008
+    class=class com.sprcore.android.mbf.helper.model.ResolveBugSpModel
+    notes=xxx
+    resolution=Fixed
+    userName=chenshiming
+    _SERVICE_=resolveBug2.php
+querySql:UPDATE BugInfo SET BugStatus   = 'Resolved',
+	                           AssignedTo      = OpenedBy,
+	                           AssignedDate    = now(),
+	                           ResolvedBy      = 'chenshiming',
+	                           Resolution      = 'Fixed',
+	                           ResolvedDate    = now(),
+	                           LastEditedBy    = 'chenshiming',
+	                           LastEditedDate  = now()
+	                     WHERE BugID           = '0000008'
+
+http://127.0.0.1/BugFree/rest/resolveBug2.php?bugId=0000008&userName=chenshiming&resolution=Fixed&notes=xxx
+querySql:UPDATE BugInfo SET BugStatus   = 'Resolved',
+	                           AssignedTo      = OpenedBy,
+	                           AssignedDate    = now(),
+	                           ResolvedBy      = 'chenshiming',
+	                           Resolution      = 'Fixed',
+	                           ResolvedDate    = now(),
+	                           LastEditedBy    = 'chenshiming',
+	                           LastEditedDate  = now()
+	                     WHERE BugID           = '0000008'
+
+http://127.0.0.1/BugFree/rest/resolveBug2.php?bugId=0000008&userName=chenshiming&resolution=Fixed&notes=xxx
+querySql:UPDATE BugInfo SET BugStatus   = 'Resolved',
+	                           AssignedTo      = OpenedBy,
+	                           AssignedDate    = now(),
+	                           ResolvedBy      = 'chenshiming',
+	                           Resolution      = 'Fixed',
+	                           ResolvedDate    = now(),
+	                           LastEditedBy    = 'chenshiming',
+	                           LastEditedDate  = now()
+	                     WHERE BugID           = '0000008'
+
+http://127.0.0.1/BugFree/rest/resolveBug2.php?bugId=0000008&userName=chenshiming&resolution=Fixed&notes=xxx
+querySql:UPDATE BugInfo SET BugStatus   = 'Resolved',
+	                           AssignedTo      = OpenedBy,
+	                           AssignedDate    = now(),
+	                           ResolvedBy      = 'chenshiming',
+	                           Resolution      = 'Fixed',
+	                           ResolvedDate    = now(),
+	                           LastEditedBy    = 'chenshiming',
+	                           LastEditedDate  = now()
+	                     WHERE BugID           = '0000008'
+
+http://127.0.0.1/BugFree/rest/resolveBug2.php?bugId=0000008&userName=chenshiming&resolution=Fixed&notes=xxx
+querySql:UPDATE BugInfo SET BugStatus   = 'Resolved',
+	                           AssignedTo      = OpenedBy,
+	                           AssignedDate    = now(),
+	                           ResolvedBy      = 'chenshiming',
+	                           Resolution      = 'Fixed',
+	                           ResolvedDate    = now(),
+	                           LastEditedBy    = 'chenshiming',
+	                           LastEditedDate  = now()
+	                     WHERE BugID           = '0000008'
+
+http://127.0.0.1/BugFree/rest/resolveBug2.php?bugId=0000008&userName=chenshiming&resolution=Fixed&notes=xxx
+querySql:UPDATE BugInfo SET BugStatus   = 'Resolved',
+	                           AssignedTo      = OpenedBy,
+	                           AssignedDate    = now(),
+	                           ResolvedBy      = 'chenshiming',
+	                           Resolution      = 'Fixed',
+	                           ResolvedDate    = now(),
+	                           LastEditedBy    = 'chenshiming',
+	                           LastEditedDate  = now()
+	                     WHERE BugID           = '0000008'
+
+http://127.0.0.1/BugFree/rest/resolveBug2.php?bugId=0000008&userName=chenshiming&resolution=Fixed&notes=xxx
+querySql:UPDATE BugInfo SET BugStatus   = 'Resolved',
+	                           AssignedTo      = OpenedBy,
+	                           AssignedDate    = now(),
+	                           ResolvedBy      = 'chenshiming',
+	                           Resolution      = 'Fixed',
+	                           ResolvedDate    = now(),
+	                           LastEditedBy    = 'chenshiming',
+	                           LastEditedDate  = now()
+	                     WHERE BugID           = '0000008'
+
+http://127.0.0.1/BugFree/rest/resolveBug2.php?bugId=0000008&userName=chenshiming&resolution=Fixed&notes=xxx
+querySql:UPDATE BugInfo SET BugStatus   = 'Resolved',
+	                           AssignedTo      = OpenedBy,
+	                           AssignedDate    = now(),
+	                           ResolvedBy      = 'chenshiming',
+	                           Resolution      = 'Fixed',
+	                           ResolvedDate    = now(),
+	                           LastEditedBy    = 'chenshiming',
+	                           LastEditedDate  = now()
+	                     WHERE BugID           = '0000008'
+
+http://127.0.0.1/BugFree/rest/resolveBug2.php?bugId=0000008&userName=chenshiming&resolution=Fixed&notes=xxx
+querySql:UPDATE BugInfo SET BugStatus   = 'Resolved',
+	                           AssignedTo      = OpenedBy,
+	                           AssignedDate    = now(),
+	                           ResolvedBy      = 'chenshiming',
+	                           Resolution      = 'Fixed',
+	                           ResolvedDate    = now(),
+	                           LastEditedBy    = 'chenshiming',
+	                           LastEditedDate  = now()
+	                     WHERE BugID           = '0000008'
+
+http://127.0.0.1/BugFree/rest/resolveBug2.php?bugId=0000008&userName=chenshiming&resolution=Fixed&notes=xxx
+querySql:UPDATE BugInfo SET BugStatus   = 'Resolved',
+	                           AssignedTo      = OpenedBy,
+	                           AssignedDate    = now(),
+	                           ResolvedBy      = 'chenshiming',
+	                           Resolution      = 'Fixed',
+	                           ResolvedDate    = now(),
+	                           LastEditedBy    = 'chenshiming',
+	                           LastEditedDate  = now()
+	                     WHERE BugID           = '0000008'
+
+http://127.0.0.1/BugFree/rest/resolveBug2.php?bugId=0000008&userName=chenshiming&resolution=Fixed&notes=xxx
+querySql:UPDATE BugInfo SET BugStatus   = 'Resolved',
+	                           AssignedTo      = OpenedBy,
+	                           AssignedDate    = now(),
+	                           ResolvedBy      = 'chenshiming',
+	                           Resolution      = 'Fixed',
+	                           ResolvedDate    = now(),
+	                           LastEditedBy    = 'chenshiming',
+	                           LastEditedDate  = now()
+	                     WHERE BugID           = '0000008'
+
+http://192.168.1.101/BugFree/rest/buginfo2.php?
+    bugId=0000008
+    class=class com.sprcore.android.mbf.helper.model.GetBuginfoSpModel
+    _SERVICE_=buginfo2.php
+getRowBySql:SELECT t.*,(SELECT max(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToUserName FROM BugInfo t where BugID='0000008'
+getListBySql:SELECT t.*,(SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.UserName) RealUserName FROM BugHistory t where BugID='0000008'
+
+http://192.168.1.101/BugFree/rest/resolveBug2.php?
+    bugId=0000008
+    class=class com.sprcore.android.mbf.helper.model.ResolveBugSpModel
+    notes=xxx
+    resolution=Fixed
+    userName=chenshiming
+    _SERVICE_=resolveBug2.php
+querySql:UPDATE BugInfo SET BugStatus   = 'Resolved',
+	                           AssignedTo      = OpenedBy,
+	                           AssignedDate    = now(),
+	                           ResolvedBy      = 'chenshiming',
+	                           Resolution      = 'Fixed',
+	                           ResolvedDate    = now(),
+	                           LastEditedBy    = 'chenshiming',
+	                           LastEditedDate  = now()
+	                     WHERE BugID           = '0000008'
+
+http://192.168.1.101/BugFree/rest/buginfos2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryServiceListSpModel
+    pageIndex=1
+    pageSize=8
+    _SERVICE_=buginfos2.php
+getListBySql:SELECT (SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToRealUserName,t.* FROM BugInfo t WHERE 1=1   ORDER BY BugID DESC  limit 0,8
+
+http://192.168.1.101/BugFree/rest/buginfo2.php?
+    bugId=0000008
+    class=class com.sprcore.android.mbf.helper.model.GetBuginfoSpModel
+    _SERVICE_=buginfo2.php
+getRowBySql:SELECT t.*,(SELECT max(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToUserName FROM BugInfo t where BugID='0000008'
+getListBySql:SELECT t.*,(SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.UserName) RealUserName FROM BugHistory t where BugID='0000008'
+
+http://192.168.1.101/BugFree/rest/resolveBug2.php?
+    bugId=0000008
+    class=class com.sprcore.android.mbf.helper.model.ResolveBugSpModel
+    notes=aaa
+    resolution=Fixed
+    userName=chenshiming
+    _SERVICE_=resolveBug2.php
+querySql:UPDATE BugInfo SET BugStatus   = 'Resolved',
+	                           AssignedTo      = OpenedBy,
+	                           AssignedDate    = now(),
+	                           ResolvedBy      = 'chenshiming',
+	                           Resolution      = 'Fixed',
+	                           ResolvedDate    = now(),
+	                           LastEditedBy    = 'chenshiming',
+	                           LastEditedDate  = now()
+	                     WHERE BugID           = '0000008'
+
+http://192.168.1.101/BugFree/rest/updateBug2.php?
+    action=Edited
+    assignedTo=chenshiming
+    bugId=0000008
+    class=class com.sprcore.android.mbf.helper.model.EditSubmitBuginfoSpModel
+    notes=sss
+    userName=chenshiming
+    _SERVICE_=updateBug2.php
+getRowBySql:select t.* from BugInfo t where t.BugID='0000008'
+
+http://192.168.1.101/BugFree/rest/updateBug2.php?
+    action=Edited
+    assignedTo=chenshiming
+    bugId=0000008
+    class=class com.sprcore.android.mbf.helper.model.EditSubmitBuginfoSpModel
+    notes=sss
+    userName=chenshiming
+    _SERVICE_=updateBug2.php
+getRowBySql:select t.* from BugInfo t where t.BugID='0000008'
+
+http://192.168.1.101/BugFree/rest/updateBug2.php?
+    action=Edited
+    assignedTo=chenshiming
+    bugId=0000008
+    class=class com.sprcore.android.mbf.helper.model.EditSubmitBuginfoSpModel
+    notes=sss
+    userName=chenshiming
+    _SERVICE_=updateBug2.php
+getRowBySql:select t.* from BugInfo t where t.BugID='0000008'
+querySql:UPDATE BugInfo SET   AssignedTo      = 'chenshiming', AssignedDate    = '2014-09-21 15:07:39',                    
+                           LastEditedBy    = 'chenshiming',
+                           LastEditedDate  = '2014-09-21 15:07:39'
+                     WHERE BugID           = '0000008'
+querySql: INSERT INTO BugHistory(BugID,UserName,Action,FullInfo,ActionDate) VALUES(
+                                      '0000008','chenshiming','Edited','sss',now())
+
+http://192.168.1.101/BugFree/rest/buginfo2.php?
+    bugId=0000008
+    class=class com.sprcore.android.mbf.helper.model.GetBuginfoSpModel
+    _SERVICE_=buginfo2.php
+getRowBySql:SELECT t.*,(SELECT max(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToUserName FROM BugInfo t where BugID='0000008'
+getListBySql:SELECT t.*,(SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.UserName) RealUserName FROM BugHistory t where BugID='0000008'
+
+http://192.168.1.101/BugFree/rest/buginfo2.php?
+    bugId=0000008
+    class=class com.sprcore.android.mbf.helper.model.GetBuginfoSpModel
+    _SERVICE_=buginfo2.php
+getRowBySql:SELECT t.*,(SELECT max(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToUserName FROM BugInfo t where BugID='0000008'
+getListBySql:SELECT t.*,(SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.UserName) RealUserName FROM BugHistory t where BugID='0000008'
+
+http://192.168.1.101/BugFree/rest/buginfos2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryServiceListSpModel
+    pageIndex=1
+    pageSize=8
+    _SERVICE_=buginfos2.php
+getListBySql:SELECT (SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToRealUserName,t.* FROM BugInfo t WHERE 1=1   ORDER BY BugID DESC  limit 0,8
+
+http://192.168.1.101/BugFree/rest/buginfos2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryServiceListSpModel
+    pageIndex=1
+    pageSize=8
+    _SERVICE_=buginfos2.php
+getListBySql:SELECT (SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToRealUserName,t.* FROM BugInfo t WHERE 1=1   ORDER BY BugID DESC  limit 0,8
+
+http://192.168.1.101/BugFree/rest/buginfos2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryServiceListSpModel
+    pageIndex=1
+    pageSize=8
+    _SERVICE_=buginfos2.php
+getListBySql:SELECT (SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToRealUserName,t.* FROM BugInfo t WHERE 1=1   ORDER BY BugID DESC  limit 0,8
+
+http://192.168.1.101/BugFree/rest/buginfo2.php?
+    bugId=0000008
+    class=class com.sprcore.android.mbf.helper.model.GetBuginfoSpModel
+    _SERVICE_=buginfo2.php
+getRowBySql:SELECT t.*,(SELECT max(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToUserName FROM BugInfo t where BugID='0000008'
+getListBySql:SELECT t.*,(SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.UserName) RealUserName FROM BugHistory t where BugID='0000008'
+
+http://192.168.1.101/BugFree/rest/buginfos2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryServiceListSpModel
+    pageIndex=1
+    pageSize=8
+    _SERVICE_=buginfos2.php
+getListBySql:SELECT (SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToRealUserName,t.* FROM BugInfo t WHERE 1=1   ORDER BY BugID DESC  limit 0,8
+
+http://192.168.1.101/BugFree/rest/buginfo2.php?
+    bugId=0000008
+    class=class com.sprcore.android.mbf.helper.model.GetBuginfoSpModel
+    _SERVICE_=buginfo2.php
+getRowBySql:SELECT t.*,(SELECT max(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToUserName FROM BugInfo t where BugID='0000008'
+getListBySql:SELECT t.*,(SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.UserName) RealUserName FROM BugHistory t where BugID='0000008'
+
+http://192.168.1.101/BugFree/rest/buginfo2.php?
+    bugId=0000008
+    class=class com.sprcore.android.mbf.helper.model.GetBuginfoSpModel
+    _SERVICE_=buginfo2.php
+getRowBySql:SELECT t.*,(SELECT max(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToUserName FROM BugInfo t where BugID='0000008'
+getListBySql:SELECT t.*,(SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.UserName) RealUserName FROM BugHistory t where BugID='0000008'
+
+http://192.168.1.101/BugFree/rest/buginfos2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryServiceListSpModel
+    pageIndex=1
+    pageSize=8
+    _SERVICE_=buginfos2.php
+getListBySql:SELECT (SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToRealUserName,t.* FROM BugInfo t WHERE 1=1   ORDER BY BugID DESC  limit 0,8
+
+http://192.168.1.101/BugFree/rest/buginfo2.php?
+    bugId=0000008
+    class=class com.sprcore.android.mbf.helper.model.GetBuginfoSpModel
+    _SERVICE_=buginfo2.php
+getRowBySql:SELECT t.*,(SELECT max(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToUserName FROM BugInfo t where BugID='0000008'
+getListBySql:SELECT t.*,(SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.UserName) RealUserName FROM BugHistory t where BugID='0000008'
+
+http://192.168.1.101/BugFree/rest/buginfos2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryServiceListSpModel
+    pageIndex=1
+    pageSize=8
+    _SERVICE_=buginfos2.php
+getListBySql:SELECT (SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToRealUserName,t.* FROM BugInfo t WHERE 1=1   ORDER BY BugID DESC  limit 0,8
+
+http://192.168.1.101/BugFree/rest/buginfo2.php?
+    bugId=0000008
+    class=class com.sprcore.android.mbf.helper.model.GetBuginfoSpModel
+    _SERVICE_=buginfo2.php
+getRowBySql:SELECT t.*,(SELECT max(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToUserName FROM BugInfo t where BugID='0000008'
+getListBySql:SELECT t.*,(SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.UserName) RealUserName FROM BugHistory t where BugID='0000008'
+
+http://192.168.1.101/BugFree/rest/queryUsers2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryUsersSpModel
+    queryString=
+    _SERVICE_=queryUsers2.php
+getListBySql:SELECT t.* FROM BugUser t  WHERE 1=1  ORDER BY UserID DESC  limit 0,
+
+http://192.168.1.101/BugFree/rest/buginfo2.php?
+    bugId=0000008
+    class=class com.sprcore.android.mbf.helper.model.GetBuginfoSpModel
+    _SERVICE_=buginfo2.php
+getRowBySql:SELECT t.*,(SELECT max(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToUserName FROM BugInfo t where BugID='0000008'
+getListBySql:SELECT t.*,(SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.UserName) RealUserName FROM BugHistory t where BugID='0000008'
+
+http://192.168.1.101/BugFree/rest/queryUsers2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryUsersSpModel
+    queryString=
+    _SERVICE_=queryUsers2.php
+getListBySql:SELECT t.* FROM BugUser t  WHERE 1=1  ORDER BY UserID DESC  limit 0,
+
+http://192.168.1.101/BugFree/rest/buginfo2.php?
+    bugId=0000008
+    class=class com.sprcore.android.mbf.helper.model.GetBuginfoSpModel
+    _SERVICE_=buginfo2.php
+getRowBySql:SELECT t.*,(SELECT max(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToUserName FROM BugInfo t where BugID='0000008'
+getListBySql:SELECT t.*,(SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.UserName) RealUserName FROM BugHistory t where BugID='0000008'
+
+http://192.168.1.101/BugFree/rest/queryUsers2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryUsersSpModel
+    queryString=
+    _SERVICE_=queryUsers2.php
+getListBySql:SELECT t.* FROM BugUser t  WHERE 1=1  ORDER BY UserID DESC  limit 0,
+
+http://192.168.1.101/BugFree/rest/queryUsers2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryUsersSpModel
+    queryString=zx
+    _SERVICE_=queryUsers2.php
+getListBySql:SELECT t.* FROM BugUser t  WHERE 1=1  and t.RealName LIKE '%zx%' OR t.UserName LIKE '%zx%' ORDER BY UserID DESC  limit 0,
+
+http://192.168.1.101/BugFree/rest/queryUsers2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryUsersSpModel
+    queryString=zx
+    _SERVICE_=queryUsers2.php
+getListBySql:SELECT t.* FROM BugUser t  WHERE 1=1  and t.RealName LIKE '%zx%' OR t.UserName LIKE '%zx%' ORDER BY UserID DESC  limit 0,
+
+http://192.168.1.101/BugFree/rest/buginfo2.php?
+    bugId=0000008
+    class=class com.sprcore.android.mbf.helper.model.GetBuginfoSpModel
+    _SERVICE_=buginfo2.php
+getRowBySql:SELECT t.*,(SELECT max(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToUserName FROM BugInfo t where BugID='0000008'
+getListBySql:SELECT t.*,(SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.UserName) RealUserName FROM BugHistory t where BugID='0000008'
+
+http://192.168.1.101/BugFree/rest/buginfos2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryServiceListSpModel
+    pageIndex=1
+    pageSize=8
+    _SERVICE_=buginfos2.php
+getListBySql:SELECT (SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToRealUserName,t.* FROM BugInfo t WHERE 1=1   ORDER BY BugID DESC  limit 0,8
+
+http://192.168.1.101/BugFree/rest/buginfo2.php?
+    bugId=0000008
+    class=class com.sprcore.android.mbf.helper.model.GetBuginfoSpModel
+    _SERVICE_=buginfo2.php
+getRowBySql:SELECT t.*,(SELECT max(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToUserName FROM BugInfo t where BugID='0000008'
+getListBySql:SELECT t.*,(SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.UserName) RealUserName FROM BugHistory t where BugID='0000008'
+
+http://192.168.1.101/BugFree/rest/queryUsers2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryUsersSpModel
+    queryString=
+    _SERVICE_=queryUsers2.php
+getListBySql:SELECT t.* FROM BugUser t  WHERE 1=1  ORDER BY UserID DESC  limit 0,
+
+http://192.168.1.101/BugFree/rest/buginfo2.php?
+    bugId=0000008
+    class=class com.sprcore.android.mbf.helper.model.GetBuginfoSpModel
+    _SERVICE_=buginfo2.php
+getRowBySql:SELECT t.*,(SELECT max(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToUserName FROM BugInfo t where BugID='0000008'
+getListBySql:SELECT t.*,(SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.UserName) RealUserName FROM BugHistory t where BugID='0000008'
+
+http://192.168.1.101/BugFree/rest/buginfos2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryServiceListSpModel
+    pageIndex=1
+    pageSize=8
+    _SERVICE_=buginfos2.php
+getListBySql:SELECT (SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToRealUserName,t.* FROM BugInfo t WHERE 1=1   ORDER BY BugID DESC  limit 0,8
+
+http://192.168.1.101/BugFree/rest/buginfo2.php?
+    bugId=0000008
+    class=class com.sprcore.android.mbf.helper.model.GetBuginfoSpModel
+    _SERVICE_=buginfo2.php
+getRowBySql:SELECT t.*,(SELECT max(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToUserName FROM BugInfo t where BugID='0000008'
+getListBySql:SELECT t.*,(SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.UserName) RealUserName FROM BugHistory t where BugID='0000008'
+
+http://192.168.1.101/BugFree/rest/queryUsers2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryUsersSpModel
+    queryString=
+    _SERVICE_=queryUsers2.php
+getListBySql:SELECT t.* FROM BugUser t  WHERE 1=1  ORDER BY UserID DESC  limit 0,
+
+http://192.168.1.101/BugFree/rest/queryUsers2.php?
+getListBySql:SELECT t.* FROM BugUser t  WHERE 1=1  ORDER BY UserID DESC  limit 0,
+
+http://192.168.1.101/BugFree/rest/queryUsers2.php?
+getListBySql:SELECT t.* FROM BugUser t  WHERE 1=1  ORDER BY UserID DESC  limit 0,
+
+http://192.168.1.101/BugFree/rest/queryUsers2.php?
+getListBySql:SELECT t.* FROM BugUser t  WHERE 1=1  ORDER BY UserID DESC  limit 0,
+
+http://192.168.1.101/BugFree/rest/queryUsers2.php?
+getListBySql:SELECT t.* FROM BugUser t  WHERE 1=1  ORDER BY UserID DESC  limit 0,
+
+http://192.168.1.101/BugFree/rest/queryUsers2.php?
+getListBySql:SELECT t.* FROM BugUser t  WHERE 1=1  ORDER BY UserID DESC  limit 0,
+
+http://192.168.1.101/BugFree/rest/queryUsers2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryUsersSpModel
+    queryString=
+    _SERVICE_=queryUsers2.php
+getListBySql:SELECT t.* FROM BugUser t  WHERE 1=1  ORDER BY UserID DESC  limit 0,
+
+http://192.168.1.101/BugFree/rest/buginfos2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryServiceListSpModel
+    pageIndex=1
+    pageSize=8
+    _SERVICE_=buginfos2.php
+getListBySql:SELECT (SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToRealUserName,t.* FROM BugInfo t WHERE 1=1   ORDER BY BugID DESC  limit 0,8
+
+http://192.168.1.101/BugFree/rest/buginfos2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryServiceListSpModel
+    pageIndex=1
+    pageSize=8
+    _SERVICE_=buginfos2.php
+getListBySql:SELECT (SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToRealUserName,t.* FROM BugInfo t WHERE 1=1   ORDER BY BugID DESC  limit 0,8
+
+http://192.168.1.101/BugFree/rest/buginfo2.php?
+    bugId=0000008
+    class=class com.sprcore.android.mbf.helper.model.GetBuginfoSpModel
+    _SERVICE_=buginfo2.php
+getRowBySql:SELECT t.*,(SELECT max(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToUserName FROM BugInfo t where BugID='0000008'
+getListBySql:SELECT t.*,(SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.UserName) RealUserName FROM BugHistory t where BugID='0000008'
+
+http://192.168.1.101/BugFree/rest/queryUsers2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryUsersSpModel
+    pageIndex=1
+    pageSize=8
+    queryString=
+    _SERVICE_=queryUsers2.php
+getListBySql:SELECT t.* FROM BugUser t  WHERE 1=1  ORDER BY UserID DESC  limit 0,8
+
+http://192.168.1.101/BugFree/rest/queryUsers2.php?
+getListBySql:SELECT t.* FROM BugUser t  WHERE 1=1  ORDER BY UserID DESC  limit 0,
+
+http://192.168.1.101/BugFree/rest/queryUsers2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryUsersSpModel
+    pageIndex=1
+    pageSize=8
+    queryString=c
+    _SERVICE_=queryUsers2.php
+getListBySql:SELECT t.* FROM BugUser t  WHERE 1=1  and t.RealName LIKE '%c%' OR t.UserName LIKE '%c%' ORDER BY UserID DESC  limit 0,8
+
+http://192.168.1.101/BugFree/rest/buginfo2.php?
+    bugId=0000008
+    class=class com.sprcore.android.mbf.helper.model.GetBuginfoSpModel
+    _SERVICE_=buginfo2.php
+getRowBySql:SELECT t.*,(SELECT max(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToUserName FROM BugInfo t where BugID='0000008'
+getListBySql:SELECT t.*,(SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.UserName) RealUserName FROM BugHistory t where BugID='0000008'
+
+http://192.168.1.101/BugFree/rest/buginfos2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryServiceListSpModel
+    pageIndex=1
+    pageSize=8
+    _SERVICE_=buginfos2.php
+getListBySql:SELECT (SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToRealUserName,t.* FROM BugInfo t WHERE 1=1   ORDER BY BugID DESC  limit 0,8
+
+http://192.168.1.101/BugFree/rest/buginfo2.php?
+    bugId=0000008
+    class=class com.sprcore.android.mbf.helper.model.GetBuginfoSpModel
+    _SERVICE_=buginfo2.php
+getRowBySql:SELECT t.*,(SELECT max(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToUserName FROM BugInfo t where BugID='0000008'
+getListBySql:SELECT t.*,(SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.UserName) RealUserName FROM BugHistory t where BugID='0000008'
+
+http://192.168.1.101/BugFree/rest/queryUsers2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryUsersSpModel
+    pageIndex=1
+    pageSize=8
+    queryString=
+    _SERVICE_=queryUsers2.php
+getListBySql:SELECT t.* FROM BugUser t  WHERE 1=1  ORDER BY UserID DESC  limit 0,8
+
+http://192.168.1.101/BugFree/rest/buginfo2.php?
+    bugId=0000008
+    class=class com.sprcore.android.mbf.helper.model.GetBuginfoSpModel
+    _SERVICE_=buginfo2.php
+getRowBySql:SELECT t.*,(SELECT max(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToUserName FROM BugInfo t where BugID='0000008'
+getListBySql:SELECT t.*,(SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.UserName) RealUserName FROM BugHistory t where BugID='0000008'
+
+http://192.168.1.101/BugFree/rest/buginfo2.php?
+    bugId=0000008
+    class=class com.sprcore.android.mbf.helper.model.GetBuginfoSpModel
+    _SERVICE_=buginfo2.php
+getRowBySql:SELECT t.*,(SELECT max(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToUserName FROM BugInfo t where BugID='0000008'
+getListBySql:SELECT t.*,(SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.UserName) RealUserName FROM BugHistory t where BugID='0000008'
+
+http://192.168.1.101/BugFree/rest/buginfos2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryServiceListSpModel
+    pageIndex=1
+    pageSize=8
+    _SERVICE_=buginfos2.php
+getListBySql:SELECT (SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToRealUserName,t.* FROM BugInfo t WHERE 1=1   ORDER BY BugID DESC  limit 0,8
+
+http://192.168.1.101/BugFree/rest/buginfo2.php?
+    bugId=0000008
+    class=class com.sprcore.android.mbf.helper.model.GetBuginfoSpModel
+    _SERVICE_=buginfo2.php
+getRowBySql:SELECT t.*,(SELECT max(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToUserName FROM BugInfo t where BugID='0000008'
+getListBySql:SELECT t.*,(SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.UserName) RealUserName FROM BugHistory t where BugID='0000008'
+
+http://192.168.1.101/BugFree/rest/queryUsers2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryUsersSpModel
+    pageIndex=1
+    pageSize=8
+    queryString=
+    _SERVICE_=queryUsers2.php
+getListBySql:SELECT t.* FROM BugUser t  WHERE 1=1  ORDER BY UserID DESC  limit 0,8
+
+http://192.168.1.101/BugFree/rest/buginfo2.php?
+    bugId=0000008
+    class=class com.sprcore.android.mbf.helper.model.GetBuginfoSpModel
+    _SERVICE_=buginfo2.php
+getRowBySql:SELECT t.*,(SELECT max(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToUserName FROM BugInfo t where BugID='0000008'
+getListBySql:SELECT t.*,(SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.UserName) RealUserName FROM BugHistory t where BugID='0000008'
+
+http://192.168.1.101/BugFree/rest/queryUsers2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryUsersSpModel
+    pageIndex=1
+    pageSize=8
+    queryString=
+    _SERVICE_=queryUsers2.php
+getListBySql:SELECT t.* FROM BugUser t  WHERE 1=1  ORDER BY UserID DESC  limit 0,8
+
+http://192.168.1.101/BugFree/rest/queryUsers2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryUsersSpModel
+    pageIndex=2
+    pageSize=8
+    queryString=
+    _SERVICE_=queryUsers2.php
+getListBySql:SELECT t.* FROM BugUser t  WHERE 1=1  ORDER BY UserID DESC  limit 8,8
+
+http://192.168.1.101/BugFree/rest/queryUsers2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryUsersSpModel
+    pageIndex=1
+    pageSize=8
+    queryString=
+    _SERVICE_=queryUsers2.php
+getListBySql:SELECT t.* FROM BugUser t  WHERE 1=1  ORDER BY UserID DESC  limit 0,8
+
+http://192.168.1.101/BugFree/rest/buginfo2.php?
+    bugId=0000008
+    class=class com.sprcore.android.mbf.helper.model.GetBuginfoSpModel
+    _SERVICE_=buginfo2.php
+getRowBySql:SELECT t.*,(SELECT max(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToUserName FROM BugInfo t where BugID='0000008'
+getListBySql:SELECT t.*,(SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.UserName) RealUserName FROM BugHistory t where BugID='0000008'
+
+http://192.168.1.101/BugFree/rest/buginfo2.php?
+    bugId=0000008
+    class=class com.sprcore.android.mbf.helper.model.GetBuginfoSpModel
+    _SERVICE_=buginfo2.php
+getRowBySql:SELECT t.*,(SELECT max(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToUserName FROM BugInfo t where BugID='0000008'
+getListBySql:SELECT t.*,(SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.UserName) RealUserName FROM BugHistory t where BugID='0000008'
+
+http://192.168.1.101/BugFree/rest/buginfos2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryServiceListSpModel
+    pageIndex=1
+    pageSize=8
+    _SERVICE_=buginfos2.php
+getListBySql:SELECT (SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToRealUserName,t.* FROM BugInfo t WHERE 1=1   ORDER BY BugID DESC  limit 0,8
+
+http://192.168.1.101/BugFree/rest/buginfos2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryServiceListSpModel
+    pageIndex=1
+    pageSize=8
+    _SERVICE_=buginfos2.php
+getListBySql:SELECT (SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToRealUserName,t.* FROM BugInfo t WHERE 1=1   ORDER BY BugID DESC  limit 0,8
+
+http://192.168.1.101/BugFree/rest/buginfos2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryServiceListSpModel
+    pageIndex=1
+    pageSize=8
+    _SERVICE_=buginfos2.php
+getListBySql:SELECT (SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToRealUserName,t.* FROM BugInfo t WHERE 1=1   ORDER BY BugID DESC  limit 0,8
+
+http://192.168.1.101/BugFree/rest/buginfos2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryServiceListSpModel
+    pageIndex=1
+    pageSize=8
+    _SERVICE_=buginfos2.php
+getListBySql:SELECT (SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToRealUserName,t.* FROM BugInfo t WHERE 1=1   ORDER BY BugID DESC  limit 0,8
+
+http://192.168.1.101/BugFree/rest/buginfos2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryServiceListSpModel
+    pageIndex=1
+    pageSize=8
+    _SERVICE_=buginfos2.php
+getListBySql:SELECT (SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToRealUserName,t.* FROM BugInfo t WHERE 1=1   ORDER BY BugID DESC  limit 0,8
+
+http://192.168.1.101/BugFree/rest/buginfos2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryServiceListSpModel
+    pageIndex=1
+    pageSize=8
+    _SERVICE_=buginfos2.php
+getListBySql:SELECT (SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToRealUserName,t.* FROM BugInfo t WHERE 1=1   ORDER BY BugID DESC  limit 0,8
+
+http://192.168.1.101/BugFree/rest/buginfos2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryServiceListSpModel
+    isMeCreate=1
+    pageIndex=1
+    pageSize=8
+    _SERVICE_=buginfos2.php
+getListBySql:SELECT (SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToRealUserName,t.* FROM BugInfo t WHERE 1=1   and OpenedBy = '' AND BugStatus != 'Closed'  ORDER BY BugID DESC  limit 0,8
+
+http://192.168.1.101/BugFree/rest/buginfos2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryServiceListSpModel
+    isAssignMe=1
+    pageIndex=1
+    pageSize=8
+    _SERVICE_=buginfos2.php
+getListBySql:SELECT (SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToRealUserName,t.* FROM BugInfo t WHERE 1=1   and AssignedTo = '' and BugStatus != 'Closed' ORDER BY BugID DESC  limit 0,8
+
+http://192.168.1.101/BugFree/rest/buginfos2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryServiceListSpModel
+    isMeCreate=1
+    pageIndex=1
+    pageSize=8
+    _SERVICE_=buginfos2.php
+getListBySql:SELECT (SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToRealUserName,t.* FROM BugInfo t WHERE 1=1   and OpenedBy = '' AND BugStatus != 'Closed'  ORDER BY BugID DESC  limit 0,8
+
+http://192.168.1.101/BugFree/rest/buginfos2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryServiceListSpModel
+    isAssignMe=1
+    pageIndex=1
+    pageSize=8
+    _SERVICE_=buginfos2.php
+getListBySql:SELECT (SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToRealUserName,t.* FROM BugInfo t WHERE 1=1   and AssignedTo = '' and BugStatus != 'Closed' ORDER BY BugID DESC  limit 0,8
+
+http://192.168.1.101/BugFree/rest/buginfos2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryServiceListSpModel
+    isMeCreate=1
+    pageIndex=1
+    pageSize=8
+    _SERVICE_=buginfos2.php
+getListBySql:SELECT (SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToRealUserName,t.* FROM BugInfo t WHERE 1=1   and OpenedBy = '' AND BugStatus != 'Closed'  ORDER BY BugID DESC  limit 0,8
+
+http://192.168.1.101/BugFree/rest/buginfos2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryServiceListSpModel
+    isAssignMe=1
+    pageIndex=1
+    pageSize=8
+    _SERVICE_=buginfos2.php
+getListBySql:SELECT (SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToRealUserName,t.* FROM BugInfo t WHERE 1=1   and AssignedTo = '' and BugStatus != 'Closed' ORDER BY BugID DESC  limit 0,8
+
+http://192.168.1.101/BugFree/rest/buginfos2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryServiceListSpModel
+    isMeCreate=1
+    pageIndex=1
+    pageSize=8
+    _SERVICE_=buginfos2.php
+getListBySql:SELECT (SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToRealUserName,t.* FROM BugInfo t WHERE 1=1   and OpenedBy = '' AND BugStatus != 'Closed'  ORDER BY BugID DESC  limit 0,8
+
+http://192.168.1.101/BugFree/rest/buginfos2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryServiceListSpModel
+    pageIndex=1
+    pageSize=8
+    _SERVICE_=buginfos2.php
+getListBySql:SELECT (SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToRealUserName,t.* FROM BugInfo t WHERE 1=1   ORDER BY BugID DESC  limit 0,8
+
+http://192.168.1.101/BugFree/rest/buginfos2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryServiceListSpModel
+    isMeCreate=1
+    pageIndex=1
+    pageSize=8
+    _SERVICE_=buginfos2.php
+getListBySql:SELECT (SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToRealUserName,t.* FROM BugInfo t WHERE 1=1   and OpenedBy = '' AND BugStatus != 'Closed'  ORDER BY BugID DESC  limit 0,8
+
+http://192.168.1.101/BugFree/rest/buginfos2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryServiceListSpModel
+    isAssignMe=1
+    pageIndex=1
+    pageSize=8
+    _SERVICE_=buginfos2.php
+getListBySql:SELECT (SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToRealUserName,t.* FROM BugInfo t WHERE 1=1   and AssignedTo = '' and BugStatus != 'Closed' ORDER BY BugID DESC  limit 0,8
+
+http://192.168.1.101/BugFree/rest/buginfos2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryServiceListSpModel
+    isMeCreate=1
+    pageIndex=1
+    pageSize=8
+    _SERVICE_=buginfos2.php
+getListBySql:SELECT (SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToRealUserName,t.* FROM BugInfo t WHERE 1=1   and OpenedBy = '' AND BugStatus != 'Closed'  ORDER BY BugID DESC  limit 0,8
+
+http://192.168.1.101/BugFree/rest/buginfos2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryServiceListSpModel
+    isAssignMe=1
+    pageIndex=1
+    pageSize=8
+    _SERVICE_=buginfos2.php
+getListBySql:SELECT (SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToRealUserName,t.* FROM BugInfo t WHERE 1=1   and AssignedTo = '' and BugStatus != 'Closed' ORDER BY BugID DESC  limit 0,8
+
+http://192.168.1.101/BugFree/rest/buginfos2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryServiceListSpModel
+    pageIndex=1
+    pageSize=8
+    _SERVICE_=buginfos2.php
+getListBySql:SELECT (SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToRealUserName,t.* FROM BugInfo t WHERE 1=1   ORDER BY BugID DESC  limit 0,8
+
+http://192.168.1.101/BugFree/rest/buginfos2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryServiceListSpModel
+    isMeCreate=1
+    pageIndex=1
+    pageSize=8
+    _SERVICE_=buginfos2.php
+getListBySql:SELECT (SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToRealUserName,t.* FROM BugInfo t WHERE 1=1   and OpenedBy = '' AND BugStatus != 'Closed'  ORDER BY BugID DESC  limit 0,8
+
+http://192.168.1.101/BugFree/rest/buginfos2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryServiceListSpModel
+    isAssignMe=1
+    pageIndex=1
+    pageSize=8
+    _SERVICE_=buginfos2.php
+getListBySql:SELECT (SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToRealUserName,t.* FROM BugInfo t WHERE 1=1   and AssignedTo = '' and BugStatus != 'Closed' ORDER BY BugID DESC  limit 0,8
+
+http://192.168.1.101/BugFree/rest/buginfos2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryServiceListSpModel
+    pageIndex=1
+    pageSize=8
+    _SERVICE_=buginfos2.php
+getListBySql:SELECT (SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToRealUserName,t.* FROM BugInfo t WHERE 1=1   ORDER BY BugID DESC  limit 0,8
+
+http://192.168.1.101/BugFree/rest/buginfos2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryServiceListSpModel
+    isMeCreate=1
+    pageIndex=1
+    pageSize=8
+    _SERVICE_=buginfos2.php
+getListBySql:SELECT (SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToRealUserName,t.* FROM BugInfo t WHERE 1=1   and OpenedBy = '' AND BugStatus != 'Closed'  ORDER BY BugID DESC  limit 0,8
+
+http://192.168.1.101/BugFree/rest/buginfos2.php?
+    class=class com.sprcore.android.mbf.helper.model.QueryServiceListSpModel
+    isAssignMe=1
+    pageIndex=1
+    pageSize=8
+    _SERVICE_=buginfos2.php
+getListBySql:SELECT (SELECT MAX(a.RealName) FROM BugUser a WHERE a.UserName=t.AssignedTo) AssignedToRealUserName,t.* FROM BugInfo t WHERE 1=1   and AssignedTo = '' and BugStatus != 'Closed' ORDER BY BugID DESC  limit 0,8
+
+http://192.168.1.101/BugFree/rest/dologin2.php?
+    class=class com.sprcore.android.mbf.helper.model.DoCheckLoginSpModel
+    userName=chenshiming
+    userPassword=password
+    _SERVICE_=dologin2.php

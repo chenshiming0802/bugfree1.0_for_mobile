@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/doc.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<!-- InstanceBeginEditable name="meta" -->
+<meta name="Keywords"    content="易软,开源,Bug管理,BugFree,php" />
+<meta name="Description" content="BugFree安装升级(Install)" />
+<meta name="site"        content="http://www.1zsoft.com" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceEndEditable -->
+<style type="text/css">
+body
+{
+  font-family: "Tahoma,Arial,Courier";
+  font-size: 9pt;
+  color: #000000;
+  background-color: #EFEFEF;
+  line-height:20px;
+}
+.Border
+{
+    margin-left:   10px;
+    margin-right:  10px;
+    margin-top:    10px;
+    margin-bottom: 10px;
+    padding:       5px;
+    border: 1px solid #999999;
+}
+h3
+{
+    color:blue;
+}
+dt
+{
+    margin-left:    20px;
+    margin-top:     5px;
+    margin-bottom:  5px;
+    font-weight:bold;
+}
+</style>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>易软开源|BugFree安装升级说明</title>
+<!-- InstanceEndEditable -->
+</head>
+<body>
+<div class="Border">
+  <a href="http://bugfree.1zsoft.com" target="_blank"><img src="http://bugfree.1zsoft.com/Images/LogoBugFree.gif" alt="BugFree" border="0" /></a>
+  <!-- InstanceBeginEditable name="author" -->
+  <h1 align="center">BugFree<strong>安装升级说明</strong></h1>
+  <div align="center"> <strong>作者： 刘振飞 Email: liuzf at pku dot org dot cn 王春生 wwccss at 263 dot net </strong></div>
+  <!-- InstanceEndEditable -->
+
+  <div align="right">
+    版本：<!-- InstanceBeginEditable name="id" -->$Id: INSTALL.htm,v 1.6 2005/10/03 10:05:36 wwccss Exp $<!-- InstanceEndEditable --><br />
+    本文档地址（点击查看最新）： <!-- InstanceBeginEditable name="source" -->
+    <a href="http://bugfree.1zsoft.com/Doc/INSTALL.htm" target="_blank">http://bugfree.1zsoft.com/Doc/INSTALL.htm</a>
+    <!-- InstanceEndEditable --> </div>
+
+  <!-- InstanceBeginEditable name="digest" -->
+  <p>摘要：本文详细讲述了如何安装BugFree，包括快速安装步骤和详细的安装步骤，还讲述了安装过程中需要注意的问题。</p>
+  <!-- InstanceEndEditable -->
+
+  <!-- InstanceBeginEditable name="keywords" -->
+  <p>关键词：BugFree,安装说明,Install,开源,linux,windows,apache,php,mysql</p>
+  <!-- InstanceEndEditable -->
+
+  <!-- InstanceBeginEditable name="menu" -->
+  <!-- InstanceEndEditable -->
+
+  <!-- InstanceBeginEditable name="content" -->
+	在阅读此文章之前，请先阅读<a href="index.htm">文档索引</a>，以便对BugFree有比较全面的了解。
+<ol>
+  <li>快速安装</li>
+  <li>系统要求</li>
+  <li>详细安装步骤</li>
+  <li>Windows平台下面的安装</li>
+  <li>升级到0.5版本</li>
+  <li>升级到1.0版本</li>
+</ol>
+
+<h3>1. 快速安装</h3>
+
+<p>如果你对apache,php,mysql比较熟悉，可以通过下面的步骤进行快速的安装。
+比较详细的安装步骤请参照 <strong>3</strong> ，如果你选择在windows平台下面进行安装，可以参照步骤<strong> 4</strong> 。</p>
+<dl>
+  <dt>1.1 下载BugFree</dt>
+  <dd>请到<a href="http://bugfree.1zsoft.com" target="_blank">http://bugfree.1zsoft.com</a>下载最新的BugFree版本</dd>
+
+  <dt>1.2 解压缩BugFree文件，上传到服务器的某个目录</dt>
+  <dd>请选择合适的解压缩程序解开BugFree发行包，然后通过FTP软件上传到服务器的某个目录，此目录通过http协议可以访问</dd>
+
+  <dt>1.3 修改目录的权限</dt>
+  <dd>上传之后，必须修改几个目录的权限：<br />
+      <ul>
+        <li>linux平台下面：chmod o=rwx Compile BugFile</li>
+        <li>windows平台下面，如果BugFree所在的目录分区为NTFS分区，也需要增加读写的权限。</li>
+      </ul>
+  </dd>
+
+  <dt>1.4 访问install.php页面，生成ConfigBug.inc.php文件</dt>
+  <dd>
+    访问http://xxx.com/BugFree/install.php页面，根据页面提示填写参数，生成BugFree的配置文件，
+    将其保存到Include目录下面，命名为ConfigBug.inc.php文件。
+  </dd>
+
+  <dt>1.5 用管理员账号登录，建立初始的项目，建立权限系统。</dt>
+  <dd>使用在1.4步骤里面建立的管理员账号登录，点击页面右上部的“管理”菜单进入后台管理，建立项目、模块，添加用户组，添加用户就可以了。</dd>
+</dl>
+
+<h3>2. 系统需求</h3>
+<ul>
+  <li>操作平台不限，推荐使用linux，以获得更好的性能</li>
+  <li>一台提供web服务的服务器，推荐使用apache 1.3系列的最新版本</li>
+  <li>MySQL (3.22 or higher)，推荐使用4.0系列的最新版本，4.1系列还有待测试</li>
+  <li>PHP>4.0，支持MySQL数据库，推荐使用4.3系列次最新版本。</li>
+</ul>
+
+<h3>3. 详细安装步骤</h3>
+<dl>
+  <dt>3.1-3.3下载BugFree，上传到服务器，修改目录的读写权限</dt>
+  <dd>请重复1.1,1.2,1.3这三个步骤</dd>
+
+  <dt>3.4 创建数据库</dt>
+  <dd>
+    需要创建一个数据库来保存BugFree相关的表。比如可以创建一个名为BugFree的数据库。<br />
+    你可以通过命令行来建立，命令如下：<br />
+    <strong>mysql> create database BugFree;</strong><br />
+      也可以使用phpMyAdmin来建立此数据库。 </dd>
+    <dt>3.5 为BugFree 库分配访问权限。默认的可以使用root帐号。</dt>
+  <dd>
+    命令行如下：<br />
+    <strong>mysql> GRANT ALL PRIVILEGES ON BugFree.* TO UserName@localhost IDENTIFIED BY 'Password' WITH GRANT OPTION;</strong><br />
+    上面的UserName和Passowrd请分别换成你自己的用户名和密码。<br />
+      也可以使用phpMyAdmin来建立此数据库。 </dd>
+    <dt>3.6 建立各个表</dt>
+  <dd>
+    <dl>
+      <dt>3.6.1 使用phpMyAdmin.</dt>
+      <dd>选择BugFree库，然后选择SQL，然后选中Document目录下面的BugFree.sql，执行就可以了。</dd>
+      <dt>3.6.1 使用命令行</dt>
+      <dd>
+        将Document目录下面的BugFree.sql文件拷贝到你的服务器上的某个目录下面。<br />
+        <strong>mysql -u UserName -p Password BugFree < 路径/BugFree.sql</strong><br />
+          其中的UserName和Password换成刚才设定的用户名和密码。BugFree.sql要写成完整的路径。 </dd>
+      </dl>
+  </dd>
+
+  <dt>3.7 修改配置文件Include/ConfigBug.inc.php</dt>
+  <dd>请按照<a href="CONFIG.htm" target="_blank">BugFree参数配置文件说明</a>文件里面的说明配置参数文件</dd>
+
+  <dt>3.8 重复1.5步，建立初始的项目模块</dt>
+  <dd>这样安装，系统会自动创建一个管理员账号为admin,密码为123456</dd>
+  
+  <dt>3.9 配置自动发信程序</dt>
+  <dd>
+    <dl>
+      <dt>3.9.1 定时脚本功能说明</dt>
+      <dd>
+      Shell下面共有四个脚本程序，分别为NoticeBug.php, NoticeBug.sh, StatBug.php, StatBug.sh。<br />
+      NoticeBug脚本用于每天给相关人员发信，通知各自的头上还有多少个bug等待处理。<br />
+      StatBug一般用在周一的时候，给相关人员发信，汇报上个礼拜的Bug统计数据。<br />
+      </dd>
+      <dt>3.9.2 调用方式</d>
+      <dd>
+        NoticeBug.php和NoticeBug.sh功能是一样，只是执行的方式不一样而已，StataBug也是如此。<br />
+        .php脚本执行方式：<br />
+        <strong>your/path/to/php your/path/to/NoticeBug.php</strong><br />
+        比如：linux平台：# /usr/bin/php /your/path/to/NoticeBug.php<br />
+              windows平台：d:\php\php.exe d:\bugfree\Shell\NoticeBug.php<br />
+              
+        .sh结尾的脚本只用于linux平台，使用之前需要增加文件的执行权限：<br />
+        # chmod 700 NoticeBug.sh<br />
+        然后直接执行就可以了。
+      </dd>
+      <dt>3.9.3 修改Shell目录的读写权限。</dt>
+      <dd>linux平台下面可以通过 chmod 700 Shell -R 命令来取消其他用户的读写权限， 或者你可以把Shell目录移到网站目录之外，防止其他用户可以直接通过浏览器访问这个目录。</dd>
+      
+      <dt>3.9.4 修改用户名和密码。</dt>
+      <dd>打开某个脚本文件，设置某个在BugFree上面的用户名和密码。</dd>
+      
+      <dt>3.9.5 建立定时程序</dt>
+      <dd>
+        linux平台通过cron程序来建立。<br />
+        windows平台通过定时程序来建立。<br />
+        我们的应用实例：NoticeBug每天早上8点执行，StatBug每周一中午12点执行。
+      </dd>
+    </dl>
+  </dd>
+
+</dl>
+
+<h3>4. Windows平台上面的安装步骤</h3>
+<dl>
+  考虑到很多网友以前没有接触过apache+php+mysql这样一种组合，安装起来会遇到很多的困难，我们单独说明一下windows平台
+  下面的BugFree的安装。
+  <dt>4.1 安装Apache + Mysql + PHP 组合套件</dt>
+  <dd>在我们以前的文档里面是推荐使用EasyPHP来安装这三个软件，可是EasyPHP改动了许多PHP的默认配置，给很多初次接触AMP
+    的网友带来很多麻烦。因此我们从本版本开始推荐使用GreenAMP 050123版套装。<br />
+    <dl>
+      <dt>4.1.1 GreenAMP介绍</dt>
+      <dd><a href="http://chin.blogchina.com/604819.html" target="_blank">http://chin.blogchina.com/604819.html</a></dd>
+      
+      <dt>4.1.2 GreenAMP下载</dt>
+      <dd><a href="http://www.baidu.com/s?ie=gb2312&bs=greenamp&sr=&z=&wd=greenamp+%CF%C2%D4%D8&ct=0&cl=3&f=8" target="_blank">点击此处进行搜索</a> 注意，一定要下载050123版本的。</dd>
+      
+      <dt>4.1.3 GreenAMP的安装</dt>
+      <dd>将GreenAMP解压缩到一个目录下面，推荐解压缩到D:\greenamp目录下面，然后双击“启动GreenAMP.bat”这个文件。中间可能会有警告报错，
+          不用管它。
+      </dd>
+      
+      <dt>4.1.4 如何启动GreenAMP</dt>
+      <dd>安装之后会apache 和 mysql自动成为系统的服务，开机的时候会自动运行，如果没有运行，请双击"启动GreenAMP.bat"文件。</dd>
+    </dl>
+  </dd>
+  <dt>4.2 安装BugFree</dt>
+  <dd>GreenAMP已经自带了phpmyadmin，你可以通过http://localhost/phpmyadmin/来管理数据库，用户名默认为root，密码为空。然后按照上面讲述的步骤 1 或者 3 进行安装就可以了。</dd>
+</dl>
+
+<h3>5. 升级到0.5版本</h3>
+<dl>
+  <dt>5.1 使用GB2312编码</dt>
+  <dd>
+    如果你原来的系统使用的是GB2312编码，并打算后面还使用GB2312编码，那么升级就非常简单，仅仅需要下载最新的BugFree程序，覆盖原来的程序，然后修改参数配置修文件
+    就可以了。注意要设置默认语言为Chinese，并将UTF8语言定义注释掉。你的Config文件最终看起来应该是这样：<br />
+    <div class="Border">
+    $BugConfig["LangList"]["English"] = "English";<br />
+    $BugConfig["LangList"]["Chinese"] = "Chinese";<br />
+    //$BugConfig["LangList"]["ChineseUTF8"] = "ChineseUTF8"; //这一行必须注释掉，否则会乱码。<br />
+    $BugConfig["DefaultLang"] = "Chinese";<br />
+    </div>
+  </dd>
+  <dt>5.2 使用UTF8编码</dt>
+  <dd>
+    如果你原来的系统使用的是GB2312编码，并打算在后面的版本中使用UTF8编码，需要按照下面的步骤进行：<br />
+    <ol>
+    
+      <li>使用phpmyadmin导出BugFree的数据库，成为一个sql文件。
+          具体的导出方式是：选择BugFree数据库，选择其中的表，导出的时候选择结构和数据，添加droptable选项也要钩上。</li>
+      <li>将导出的数据库转成utf8格式的。
+          将生成的SQL文件使用支持UTF8编码的编辑器另存成UTF8编码。</li>
+      <li>使用phpmyadmin将utf-8格式的数据库文件导入数据库。
+          如果SQL语句报错，可能是在转化过程中出现问题，可以换其他的编辑器试一下。也有可能是UTF8 BOM的问题，需要在上面一步中将
+          SQL文件存成no bom格式的UTF8 编码文件。</li>
+      <li>修改你的参数配置文件，你的配置文件最终看起来应该是这样：
+          <div class="Border">
+          $BugConfig["LangList"]["English"]   = "English";<br />
+          //$BugConfig["LangList"]["Chinese"] = "Chinese"; 这一行必须注释掉，否则会乱码。<br />
+          $BugConfig["LangList"]["ChineseUTF8"] = "ChineseUTF8";<br /> 
+          $BugConfig["DefaultLang"] = "ChineseUTF8";注意大小写
+          </div>
+  </dd>
+</dl>
+
+<h3>6. 升级到1.0 版本</h3>
+<dl>
+  <dt>6.1 从0.4或者以前的版本升级到1.0。</dt>
+  <dd>如果您现在使用的是0.4或者以前的版本，请参阅上面的升级步骤，解决数据库编码的问题。</dd>
+  <dt>6.2 备份原来的程序和数据，下载最新程序。</dt>
+  <dd>
+    将原来的程序和数据库进行备份，下载最新的程序。修改参数配置文件：Include/ConfigBug.inc.php文件。
+  </dd>
+  <dt>6.3 访问upgrade.php程序</dt>
+  <dd>
+    访问http://xxx/bugfree/upgrade.php程序，升级数据库结构。
+  </dd>
+  <dt>6.4 建立初始的权限系统。</dt>
+  <dd>使用管理员账号登录，建立用户组，分派权限。</dd>
+  <!-- InstanceEndEditable -->
+</div>
+
+<div class="Border">
+文档历史：
+<!-- InstanceBeginEditable name="log" -->
+<xmp>
+$Log: INSTALL.htm,v $
+Revision 1.6  2005/10/03 10:05:36  wwccss
+ + Add upgrade steps of 1.0 version.
+
+Revision 1.5  2005/08/11 15:31:12  wwccss
+ + Add email feature howto
+ + Add upgrade howto
+
+Revision 1.4  2005/06/27 07:27:38  wwccss
+ + add installation on windows.
+
+</xmp>
+<!-- InstanceEndEditable -->
+</div>
+<div align="center">
+  <!-- InstanceBeginEditable name="clickcount" -->
+  <script src="http://bugfree.1zsoft.com/ClickCount.php?DocFile=INSTALL.htm"></script>
+  <!-- InstanceEndEditable -->
+</div>
+</body>
+<!-- InstanceEnd --></html>

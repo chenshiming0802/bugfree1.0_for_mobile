@@ -1,0 +1,36 @@
+BugFree发展过程中参与的人员(姓氏拼音排序)：
+-----------------------------------------
+
+    刘振飞 <liuzf@pku.org.cn> 需求设计
+    王春生 <wwccss@263.net>   功能开发
+
+BugFree目前由易软开源开发小组维护(姓氏拼音排序)：
+-----------------------------------------------
+
+    马  喆 <mmazhe@gmail.com>     产品总监       负责BugFree的测试、网络宣传
+    李玉鹏 <leeyupeng@gmail.com>  高级开发工程师 参与BugFree的开发，http://www.leeyupeng.com.
+    刘振飞 <liuzf@pku.org.cn>     技术总监       总体把握BugFree，设计斟酌BugFree功能。
+    王春生 <wwccss@263.net>       小组常任理事   负责小组日常事务，BugFree核心开发人员，设计斟酌BugFree功能。
+    叶  琳 <scott.yell@gmail.com> 高级开发工程师 参与BugFree的开发。
+    张宏彪 <mulongnet@gmail.com>  市场总监       负责BugFree市场开拓及商业应用。 http://www.bnulife.com http://www.mulong.net
+
+另外BugFree在发展过程中得到了众多网友的支持，在此不再一一列出，感谢你们！http://www.1zsoft.com/Forum/
+
+Historical(order by first name):
+--------------------------------
+
+    Zhenfei Liu    <liuzf@pku.org.cn> - designer
+    Chunsheng Wang <wwccss@263.net>   - developer
+
+Current, BugFree is maintained by EasySoft R&D(order by first name.)
+----------------------------------------------
+
+    Zhe Ma         <mmazhe@gmail.com>       QA Manager
+    Yupeng Li      <leeyupeng@gmail.com>    Professional Developer  http://www.leeyupeng.com
+    Zhenfei Liu    <liuzf@pku.org.cn>       Technic Manager
+    Chunsheng Wang <wwccss@263.net>         General Manager         http://www.1zsoft.com
+    Lin Ye         <scott.yell@gmail.com>   Professional Developer
+    Hongbiao Zhang <mulongnet@gmail.com>    Market Manager          http://www.bnulife.com http://www.mulong.net
+
+Many others in the BugFree user community.  They are listed in the BugFree forum.
+Please review that topic discussion for the names of those contributors: http://www.1zsoft.com/Forum/

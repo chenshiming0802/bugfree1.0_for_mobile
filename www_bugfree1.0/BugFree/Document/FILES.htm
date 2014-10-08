@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/doc.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<!-- InstanceBeginEditable name="meta" -->
+<meta name="Keywords"    content="易软,开源,Bug管理,BugFree,php" />
+<meta name="Description" content="BugFree目录文件结构列表" />
+<meta name="site"        content="http://www.1zsoft.com" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceEndEditable -->
+<style type="text/css">
+body
+{
+  font-family: "Tahoma,Arial,Courier";
+  font-size: 9pt;
+  color: #000000;
+  background-color: #EFEFEF;
+  line-height:20px;
+}
+.Border
+{
+    margin-left:   10px;
+    margin-right:  10px;
+    margin-top:    10px;
+    margin-bottom: 10px;
+    padding:       5px;
+    border: 1px solid #999999;
+}
+h3
+{
+    color:blue;
+}
+dt
+{
+    margin-left:    20px;
+    margin-top:     5px;
+    margin-bottom:  5px;
+    font-weight:bold;
+}
+</style>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>易软开源|BugFree目录文件结构列表</title>
+<!-- InstanceEndEditable --> 
+</head>
+<body>
+<div class="Border"> 
+  <a href="http://bugfree.1zsoft.com" target="_blank"><img src="http://bugfree.1zsoft.com/Images/LogoBugFree.gif" alt="BugFree" border="0" /></a> 
+  <!-- InstanceBeginEditable name="author" -->
+  <h1 align="center">BugFree目录文件结构列表</h1>
+  <div align="center"> <strong>作者：刘振飞 Email: liuzf at pku dot org dot cn </strong></div>
+  <!-- InstanceEndEditable -->
+  
+  <div align="right"> 
+    版本：<!-- InstanceBeginEditable name="id" -->$Id: FILES.htm,v 1.5 2005/06/27 07:23:59 wwccss Exp $<!-- InstanceEndEditable --><br />
+    本文档地址（点击查看最新）： <!-- InstanceBeginEditable name="source" -->
+    <a href="http://bugfree.1zsoft.com/Doc/FILES.htm" target="_blank">http://bugfree.1zsoft.com/Doc/FILES.htm</a>
+    <!-- InstanceEndEditable --> </div>
+  
+  <!-- InstanceBeginEditable name="digest" -->
+  <p>摘要：本文描述了BugFree的目录文件结构，适合于开发人员阅读。</p>
+  <!-- InstanceEndEditable -->
+  
+  <!-- InstanceBeginEditable name="keywords" -->
+  <p>关键词：BugFree,结构,登录,验证,查询,开源</p>
+  <!-- InstanceEndEditable -->
+  
+  <!-- InstanceBeginEditable name="menu" -->
+  <!-- InstanceEndEditable -->
+  
+  <!-- InstanceBeginEditable name="content" -->
+	<h3>1. 公共文件 /Include</h3>
+  <dl>
+    <dt>◇ SetupBug.inc.php     </dt><dd>BugFree的公共头文件，被上层PHP文件包含。这个公共头文件中包含配置文件、公共函数、公共类文件以及其他公用信息</dd>
+    <dt>◇ ConfigBug.inc.php    </dt><dd>BugFree的公共配置参数(如数据库访问等)</dd>
+    <dt>◇ FunctionsMain.inc.php</dt><dd>公共函数集合</dd>
+    <dt>◇ LangFile </dt><dd>多语言、多样式支持，目前支持中、英文；标准样式和蓝色样式</dd>
+        <dl>
+          <dt>*.php文件</dt><dd>语言文件，一种语言对应一个php文件。</dd>
+          <dt>*.css文件</dt><dd>样式表文件。因为不同语言的显示效果不同，所以一种语言一种样式对应一个样式表文件。</dd>
+        </dl>
+    <dt>◇ Class</dt><dd>存放公用的类文件如：Html,JS(JavaScript),Page,TreeMenu,ADO,Smarty</dd>
+  </dl>
+  
+  <h3>2. 登录退出</h3>
+  <dl>
+    <dt>◇ Login.php => Login.tpl 登录入口</dt>
+    <dd>
+      显示登录页面(Login.tpl)，调用 FunctionsMain.inc.php 中公用函数 bugJudgeUser判断是否为合法用户，
+      若是则进入BugFree 主页面 index.php。可以在此页面改变该用户的语言和样式，这些信息被保留在 cookie 中，
+      以后凡是涉及到信息提示/Email时都会用到语言的设置。
+    </dd>
+    <dt>◇ Logout.php 退出系统</dt><dd>当用户点击主页面右上角的“退出”时，调用此文件。退出前会提示用户。</dd>
+    <dt>◇ index.php => index.tpl 成功登录以后的主页面</dt><dd>这是显示的首页面。用到框架(Frame)技术，由以下左、右两个页面组合而成：</dd>
+    <dt>◇ LeftMenu.php => LeftMenu.tpl 主页面的左边框架</dt><dd>由上部的 ListModule.php 和下部的 UserControl.php 组成。</dd>
+    <dt>◇ RightMenu.php => RightMenu.tpl 主页面的右边框架</dt>
+    <dd>由上部的 QueryBugForm.php 和下部的 QueryBug.php (缺省)组成。这里下部显示动态可变，由 $_SESSION["RightBottomURL"] 
+      确定。</dt> </dd>
+  </dl>
+  
+  <h3> 3. 首页组成部分</h3>
+  <dl>
+    <dt>◇ ListModule.php =>  ListModule.tpl 显示项目/模块信息</dt>
+    <dd>首页面的左边框架之上部。分两块：切换查询和创建(QueryBug.php+AddBugForm.php),
+  项目和模块列表。请注意当点击查询或创建时，项目和模块列表树状列表中的链接地址是自
+  动变化的，这样在右边框架下部显示查询结果或创建Bug页面。</dd>
+
+  <dt>◇ UserControl.php => UserControl.tpl 显示当前用户的Bug查询信息</dt>
+  <dd>首页面的左边框架之下部。此处依次显示最近5个指派给用户的、由用户创建的Bug以及自定义的查询条件。</dd>
+
+  <dt>◇ QueryBugForm.php        QueryBugForm.tpl</dt>
+  <dd>首页面的右边框架之上部。显示查询的各种条件。上方是一些命令列表：
+  帮助、关于 BugFree、检查更新、主页、退出。<br />
+  首页面的右边框架之下部是动态改变的，根据不同的状态显示不同的文件 --- 查询或Bug的
+  不同生命周期对应的文件。</dd>
+  </dl>
+
+  <h3>4. Bug操作的相关文件：Bug 的一生：从创建到关闭</h3>
+  <dl>
+    <dt>◇ AddBugForm.php =>  AddBugForm.tpl 创建一个新Bug的表单</dt>
+    <dd>当点击首页面左上方的“创建 Bug”链接时，此表单被显示在右边框架之下部。用户在
+    此输入新Bug的各种信息。特别注意的是，一个新Bug可以同时提交多次给不同的人，从而生
+    成不同的Bug。这个特性对数据校对、事物跟踪两类问题特别有用。提交时调用AddBug.php。</dd>
+  
+    <dt>◇ AddBug.php 加入一个新Bug</dt>
+    <dd>把用户提交的Bug加入到BugFree系统中。若是指派给多个人，则生成多个 Bug。并将这
+    个Bug的变化信息发Email通知给被指派人和发信通知人。加入后调用 BugInfo.php。</dd>
+  
+    <dt>◇ BugInfo.php => BugInfo.tpl 显示一个Bug信息</dt>
+    <dd>显示一个Bug的所有信息，此时可以编辑(EditBugForm.php)、解决(Resolve这个Bug。 </dd>
+    <dt>◇ EditBugForm.php => EditBugForm.tpl 编辑一个Bug的信息</dt>
+    <dd>编辑一个Bug的所有信息。提交时调用 UpdateBug.php。</dd>
+  
+    <dt>◇ UpdateBug.php  更新一个Bug的信息</dt>
+    <dd>把一个Bug的信息更新到系统中，并返回 BugInfo.php。</dd>
+  
+    <dt>◇ ResolveBug.php =>  ResolveBug.tpl 解决一个Bug</dt>
+    <dd>解决一个Bug，选定七个解决方案中的一个。完了返回BugInfo.php。此时可以关闭或者
+    激活(CloseBug.php & ActivateBug.php)这个Bug。</dd>
+  
+    <dt>◇ ActivateBug.php => ActivateBug.tpl 激活一个Bug</dt>
+    <dd>激活一个Bug，表示你不同意这个Bug的解决方案。一个Bug 只有在被解决后或关闭后才
+    可以被激活。</dd>
+  
+    <dt>◇ CloseBug.php => CloseBug.tpl 关闭一个Bug</dt>
+    <dd>关闭一个Bug，意味着Bug生命的终结。此后用户可以激活这个Bug，表示这个Bug又重现
+    了，也可以继续编辑这个Bug。</dd>
+  </dl>
+
+  <h3>5. 查询功能的文件</h3>
+  <dl>
+    <dt>◇ QueryBug.php =>    QueryBug.tpl 查询符合条件的Bug</dt>
+    <dd>系统中查询符合条件的Bug的集中处理地方。有以下几种情况：
+    * 查询模式下，点击左边 [项目和模块列表 ] 中某项，查询指定项目和模块的Bug
+    * 执行 [我自定义的查询条件] 中的某个用户自定义查询
+    * 用户点击查询窗口中，OpenedBy、AssignedTo、Resolved、Status等任一项
+    * 用户通过 QueryBugForm.php 定义的查询条件</dd>
+    
+    <dt>◇ SaveQuery.php =>   SaveQuery.tpl 保存用户定义的查询条件</dt>
+    <dd>当前用户点击 QueryBugForm.php 上的[保存查询]时调用此文件。</dd>
+    
+    <dt>◇ DelQuery.php 删除一个用户定义的查询条件</dt>
+    <dd>点击左下方UserControl.php 上的[删除]按钮时，调用此文件以删除一个用户定义的查询条件。</dd>
+  </dl>
+  
+  <h3>6. Email自动通知功能相关文件</h3>
+  <dl>
+    <dt>◇ NoticeBug.php =>   NoticeBug.tpl 发信通知每个用户的Bug情况</dt>
+    <dd>所有没有关闭的Bug按照AssignedTo排序，列举每个用户当前头上的Bug数。可以定期执
+    行这个文件以通知所有头上有Bug的用户加快处理进度，比如每天早上8:00am执行。</dd>
+  
+    <dt>◇ StatBug.php =>     StatBug.tpl 发信给所有人告知当前Bug统计情况</dt>
+    <dd>可以定时执行这个文件，比如每周一上午12:00。这样BugFree中所有的用户都会收到一
+    封统计Bug情况的信件：(1)上周Bug情况 (2)到目前为止所有Bug情况</dd>
+  </dl>
+
+  <h3> 7. 后台管理</h3>
+  <dl>
+    <dt>◇ index.php => index.tpl 入口文件</dt>
+    <dd>此文件是登录到后台管理的入口文件。</dd>
+  
+    <dt>◇ AdminMenu.php =>   AdminMenu.tpl 后台管理菜单</dt>
+    <dd>显示在后台管理页面的左侧，主要列出两类事情的管理：用户管理、项目和模块的管理。</dd>
+  
+    <dt>◇ ManageProject.php => ManageProject.tpl 管理项目的信息</dt>
+    <dd>可以添加或编辑一个项目，以及给它添加一个新模块。</dd>
+  
+    <dt>◇ ManageModule.php => ManageModule.tpl 管理模块的信息</dt>
+    <dd>可以编辑当前模块，或添加一个新的子模块。</dd>
+  
+    <dt>◇ ListBugUser.php => ListBugUser.tpl 列举BugFree的用户</dt>
+    <dd>此处是简单后台用户管理的入口。</dd>
+  
+    <dt>◇ AddBugUser.php => 添加一个BugFree的用户</dt>
+    <dd>当管理员通过ListBugUser.php来添加一个用户时，调用此文件来完成添加。</dd>
+  
+    <dt>◇ DelBugUser.php => 删除一个BugFree的用户</dt>
+    <dd>当管理员通过DelBugUser.php来删除一个用户时，调用此文件来完成删除。</dd>
+  </dl>
+
+  <h3> 8. Shell程序</h3>
+  <dl>
+    <dt>◇ NoticeBug.php  NoticeBug.sh</dt>
+    <dd>由系统定时执行的程序，这里设置某个BugFree 的用户名和密码，然后调用上层目录中
+    的NoticeBug.php，完成上面所述NoticeBug.php的功能。</dd>
+    
+    <dt>◇ StatBug.php  StatBug.sh</dt>
+    <dd>由系统定时执行的程序，这里设置某个BugFree 的用户名和密码，然后调用上层目录中
+    的StatBug.php，完成上面所述StatBug.php的功能。</dd>
+    </dl>
+  </dl>
+
+  <h3>9. SESSION变量列表</h3>  
+  <dl>
+    <dt>◇ ListModule.php</dt><dd>  $_SESSION["BugProjectID"]  $_SESSION["BugActionMode"]</dd>
+    <dt>◇ Login.php</dt><dd>  $_SESSION["BugUserName"] $_SESSION["BugUserRealName"]</dd>
+    <dt>◇ QueryBug.php</dt><dd>  $_SESSION["QueryCondition"]  $_SESSION["OrderCondition"]</dd>
+    <dt>◇ QueryBug.php AddBug.php AddBugForm.php FunctionsMain.inc.php 中的bugJudgeUser()函数。</dt><dd> $_SESSION["RightBottomURL"] = $_SERVER["REQUEST_URI"]</dd>
+  </dl>    
+  
+  <h3>10. 其他</h3>
+  <dl>
+    <dt>◇ EditSelfInfo.php   => EditSelfInfo.tpl 编辑当前用户的个人信息</dt>
+    <dd>BugFree Ver 2.0 增加了简单的用户管理功能，管理员通过后台可以增加一个用户；而
+    用户可以通过界面右上方的[编辑我的信息]来改变自己的密码、邮件信息等。</dd>
+  </dl>
+  <!-- InstanceEndEditable -->
+</div>
+
+<div class="Border">
+文档历史：
+<!-- InstanceBeginEditable name="log" -->
+<xmp>
+$Log: FILES.htm,v $
+Revision 1.5  2005/06/27 07:23:59  wwccss
+ * reduce the history info of document.
+
+</xmp>
+<!-- InstanceEndEditable -->
+</div>
+<div align="center">
+  <!-- InstanceBeginEditable name="clickcount" -->
+  <script src="http://bugfree.1zsoft.com/ClickCount.php?DocFile=FILES.htm"></script>
+  <!-- InstanceEndEditable -->
+</div>
+</body>
+<!-- InstanceEnd --></html>

@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/doc.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<!-- InstanceBeginEditable name="meta" -->
+<meta name="Keywords"    content="易软,开源,Bug管理,BugFree,php" />
+<meta name="Description" content="BugFree常见问题解答(FAQ)" />
+<meta name="site"        content="http://www.1zsoft.com" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceEndEditable -->
+<style type="text/css">
+body
+{
+  font-family: "Tahoma,Arial,Courier";
+  font-size: 9pt;
+  color: #000000;
+  background-color: #EFEFEF;
+  line-height:20px;
+}
+.Border
+{
+    margin-left:   10px;
+    margin-right:  10px;
+    margin-top:    10px;
+    margin-bottom: 10px;
+    padding:       5px;
+    border: 1px solid #999999;
+}
+h3
+{
+    color:blue;
+}
+dt
+{
+    margin-left:    20px;
+    margin-top:     5px;
+    margin-bottom:  5px;
+    font-weight:bold;
+}
+</style>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>易软开源|BugFree常见问题解答(FAQ)</title>
+<!-- InstanceEndEditable --> 
+</head>
+<body>
+<div class="Border"> 
+  <a href="http://bugfree.1zsoft.com" target="_blank"><img src="http://bugfree.1zsoft.com/Images/LogoBugFree.gif" alt="BugFree" border="0" /></a> 
+  <!-- InstanceBeginEditable name="author" -->
+  <h1 align="center">BugFree常见问题解答(FAQ)</h1>
+  <div align="center"> <strong>作者：王春生 Email: wwccss at 263 dot net </strong></div>
+  <!-- InstanceEndEditable -->
+  
+  <div align="right"> 
+    版本：<!-- InstanceBeginEditable name="id" -->$Id: FAQ.htm,v 1.4 2005/06/27 07:23:59 wwccss Exp $<!-- InstanceEndEditable --><br />
+    本文档地址（点击查看最新）： <!-- InstanceBeginEditable name="source" -->
+    <a href="http://bugfree.1zsoft.com/Doc/FAQ.htm" target="_blank">http://bugfree.1zsoft.com/Doc/FAQ.htm</a>
+    <!-- InstanceEndEditable --> </div>
+  
+  <!-- InstanceBeginEditable name="digest" -->
+  <p>摘要：本文讲述了BugFree安装使用过程经常遇到的问题及其解决方案。</p>
+  <!-- InstanceEndEditable -->
+  
+  <!-- InstanceBeginEditable name="keywords" -->
+  <p>关键词：BugFree,FAQ,PHP,apache,易软,开源,LIMIT,notice,warnning,SMTP,管理员</p>
+  <!-- InstanceEndEditable -->
+  
+  <!-- InstanceBeginEditable name="menu" -->
+  <!-- InstanceEndEditable -->
+  
+  <!-- InstanceBeginEditable name="content" -->
+	 <ol>
+    <li>BugFree的含义是什么？</li>
+    <p>1. 我们希望可以通过BugFree为您的软件开发起到一定的帮助，有效的跟踪解决开发中所遇到的Bug.<br />
+       2. BugFree自身是开源且免费的，您可以随意使用。</p>
+    
+    <li style="color:red">1zsoft.com 是什么意思？</li>
+    <p style="color:blue">这个地方是数字的 <strong> “1” </strong>，而并非是字母<strong>“L”</strong>，
+    1zsoft的含义是easy soft 的谐音，中文翻译是"易软"<br />
+    BugFree是"易软开源"网站的一个组成部分，关于易软开源网站，请访问 <a href="http://www.1zsoft.com" target="_blank">http://www.1zsoft.com</a>
+    </p>
+    
+    <li>为什么点击一个还没有提交Bug的模块，会出现LIMIT -20,20的错误？</li>
+    <p>原因：Page.class类的limit()方法对记录总数为零的情况判断不好，导致出现这个问题。<br />
+       解决：请升级到最新的版本以解决这个问题。</p>
+    
+    <li>如何配置BugFree可以发信？</li>
+    <p>请参照<a href="CONFIG.htm" target="_blank">《BugFree配置文件详细说明》</a></p>
+    
+    <li>我是不是必须安装SMTP服务器才能使用BugFree的自动发信功能呢？</li>
+    <p>并不是必须的，你可以使用其他的smtp服务器，只要它允许你可以访问就可以了。换句话讲，只要你有一个合法的email账号，
+       就可以使用BugFree的自动发信功能。</p>
+    
+    <li>BugFree的7种解决方案各自的含义是什么？</li>
+    <p>
+      By Design - 就是这么设计的，无效的Bug<br />
+      Duplicate - 这个问题别人已经发现了，重复的Bug<br />
+      External  - 是个外部因素(比如浏览器、操作系统、其他第3方软件)造成的问题<br />
+      Fixed     - 问题被修理掉了。Tester要尽可能找到这种Bug<br />
+      Not Repro - 无法复现你这个问题，无效的Bug<br />
+      Postponed - 是个问题，但是目前不必修理了，推迟到以后再解<br />
+      Won't Fix - 是个问题，但是不值得修理了，不管它吧<br />
+    </p>
+    
+    <li>如何成为管理员？</li>
+    <p>打开Include/ConfigBug.inc.php文件:<br />
+       $BugConfig["AdminUser"] = array("admin","你的用户名");<br />
+       要注意引号和逗号的间隔。
+    </p>
+    
+    <li>我的BugFree安装完了之后中文界面全是乱码</li>
+    <p>
+    1. 如果你安装的apache版本是2.0系列的，请修改httpd.conf文件，
+    将<span style="color:blue">AddDefaultCharset ISO-8859-1 改成 AddDefaultCharset GB2312</span><br />
+    2. 你曾经修改Include/LangFile/的语言文件，保存的时候没有按照原来的文件类型进行保存。请换一个编辑器重新打开，然后保存一下。<br />
+    3. 你曾经修改过Docuemnt/BugFree.sql文件，也导致了上面相同的问题。建议使用phpmyadmin将BugFree数据库里面的记录清空，然后
+       通过BugFree自带的改理后台建立初始的项目和模块。
+    </p>
+    
+    <li>BugFree有没有windows或者linux下面的版本？</li>
+    <p>BugFree是用php编写的，而php是跨平台的，所以只要你的平台支持php，BugFree就可以使用。曾经有一位网友给我们发信说
+       他成功的在MAC的系统上面配置了BugFree，而且非常稳定。</p>
+    
+    <li>BugFree可以在IIS下面运行吗？</li>
+    <p>可以，但我们没有做过详细的测试。</p>
+    
+    <li>如何下载BugFree？</li>
+    <p>请到我们的网站进行下载：<a href="http://bugfree.1zsoft.com" target="_blank">http://bugfree.1zsoft.com</a></p>
+    
+    <li>如何增加上传附件的大小?</li>
+    <p>修改ConfigBug.inc.php文件。<br />
+       $BugConfig["File"]["MaxFileSize"] = 1024 * 100; //注意单位是字节。
+    </p>
+    
+    <li>为什么提示“服务器繁忙”？</li>
+    <p>请检查你的配置文件ConfigBug.inc.php里面连接数据库的参数是否正确。</p>
+    
+    <li>你们是使用什么编辑器来编辑PHP的？</li>
+    <p>我们使用的是UltraEdit-32。</p>
+    
+    <li>为什么我在局域网装好了BugFree之后，同局域网里面的机器无法访问呢？</li>
+    <p>请修改你的httpd.conf配置文件，将其中的ServerName改成你的机器的IP地址。</p>
+    
+    <li>提示找不到文件:'ADO/adodb.inc.php' </li>
+    <p>请升级到最新的版本来解决这个问题。</p>
+    
+    <li>为什么我登录以后老是报错呢？Warning: session_start(): </li>
+    <p>请检查你的php.ini文件，其中有一项为session.save_path，确保这个目录存在，并且可读可写可执行。</p>
+    
+    <li>Warning: Call-time pass-by-reference has been deprecated</li>
+    <p>请修改你的php.ini文件，将allow_call_time_pass_reference 设成 "On"</p>
+    
+    <li>unable to read resource: "Login.tpl"</li>
+    <p>请升级到最新的版本来解决这个问题，如果问题还是存在，请修改SetupBug.inc.php文件:<br />
+    $TPL->template_dir  = $BugConfig["ScriptDir"] . "/" . 'Template';<br />
+    $TPL->compile_dir   = $BugConfig["ScriptDir"] . "/" . 'Compile'; <br />
+    将上面路径改成绝对路径，如果windows下面，可以这样写：d:\\BugFree\\Template;
+    </p>
+    
+    <li>BugFree支持不支持php5</li>
+    <p>支持</p>
+    
+    <li>Notice: Undefined index: BugUserName</li>
+    <p>请升级到最新的版本来解决这个问题</p>
+    
+    <li>我在这个地方没有找到答案？</li>
+    <p>如果在这个地方还没有找到你的的答案，你可以到我们的论坛提出你的问题。
+    <a href="http://bugfree.1zsoft.com">http://bugfree.1zsoft.com</a><br />
+    <span style="color:red;font-weight:bold">强烈建议你在提问之前，使用搜索功能，看看你的问题有没有得到解答。<br />
+    在你决定提问之前，强烈建议你首先阅读
+    <a href="http://www.google.com/search?hl=zh-CN&q=%E6%8F%90%E9%97%AE%E7%9A%84%E6%99%BA%E6%85%A7&btnG=Google+%E6%90%9C%E7%B4%A2&lr=" target="_blank">《提问的智慧》</a>
+    </span>
+    </p>
+  </ol>
+  <!-- InstanceEndEditable -->
+</div>
+
+<div class="Border">
+文档历史：
+<!-- InstanceBeginEditable name="log" -->
+<xmp>
+$Log: FAQ.htm,v $
+Revision 1.4  2005/06/27 07:23:59  wwccss
+ * reduce the history info of document.
+
+Revision 1.3  2005/06/25 08:58:32  bugfree
+ * chang "d:\\BugFree\Template" to "d:\\BugFree\\Template"
+Revision 1.1  2005/06/13 02:49:38  wwccss
+ + add FAQ document.
+
+</xmp>
+<!-- InstanceEndEditable -->
+</div>
+<div align="center">
+  <!-- InstanceBeginEditable name="clickcount" -->
+  <script src="http://bugfree.1zsoft.com/ClickCount.php?DocFile=FAQ.htm"></script>
+  <!-- InstanceEndEditable -->
+</div>
+</body>
+<!-- InstanceEnd --></html>

@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/doc.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<!-- InstanceBeginEditable name="meta" -->
+<meta name="Keywords"    content="易软,开源,Bug管理,BugFree,php" />
+<meta name="Description" content="BugFree修改记录" />
+<meta name="site"        content="http://www.1zsoft.com" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceEndEditable -->
+<style type="text/css">
+body
+{
+  font-family: "Tahoma,Arial,Courier";
+  font-size: 9pt;
+  color: #000000;
+  background-color: #EFEFEF;
+  line-height:20px;
+}
+.Border
+{
+    margin-left:   10px;
+    margin-right:  10px;
+    margin-top:    10px;
+    margin-bottom: 10px;
+    padding:       5px;
+    border: 1px solid #999999;
+}
+h3
+{
+    color:blue;
+}
+dt
+{
+    margin-left:    20px;
+    margin-top:     5px;
+    margin-bottom:  5px;
+    font-weight:bold;
+}
+</style>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>易软开源|BugFree修改记录</title>
+<!-- InstanceEndEditable --> 
+</head>
+<body>
+<div class="Border"> 
+  <a href="http://bugfree.1zsoft.com" target="_blank"><img src="http://bugfree.1zsoft.com/Images/LogoBugFree.gif" alt="BugFree" border="0" /></a> 
+  <!-- InstanceBeginEditable name="author" -->
+  <h1 align="center">BugFree修改记录</h1>
+  <div align="center"> <strong>作者：刘振飞 Email: liuzf at pku dot org dot cn 王春生 wwccss at 263 dot net</strong></div>
+  <!-- InstanceEndEditable -->
+  
+  <div align="right"> 
+    版本：<!-- InstanceBeginEditable name="id" -->$Id: CHANGELOG.htm,v 1.10 2005/09/25 02:27:32 wwccss Exp $<!-- InstanceEndEditable --><br />
+    本文档地址（点击查看最新）： <!-- InstanceBeginEditable name="source" -->
+    <a href="http://bugfree.1zsoft.com/Doc/CHANGELOG.htm" target="_blank">http://bugfree.1zsoft.com/Doc/CHANGELOG.htm</a>
+    <!-- InstanceEndEditable --> </div>
+  
+  <!-- InstanceBeginEditable name="digest" -->
+  <p>摘要：BugFree的修改记录。</p>
+  <!-- InstanceEndEditable -->
+  
+  <!-- InstanceBeginEditable name="keywords" -->
+  <p>关键词：BugFree,changelog,ADO,PHP,smarty,Email,0.3,notice,开源,修改记录</p>
+  <!-- InstanceEndEditable -->
+  
+  <!-- InstanceBeginEditable name="menu" -->
+  <!-- InstanceEndEditable -->
+  
+  <!-- InstanceBeginEditable name="content" -->
+	<!-- Change Log of Version 1.0-->
+    <h3>BugFree Version 1.0 (2005-10-08)</h3>
+    <ul>
+      <li> New：在项目一级增加权限管理！BugFree的主要功能已添加完毕，成为非常完整的Bug管理工具，故版本升级为1.0！</li>
+      <li> New: 可以自定义查询结果的显示字段</li>
+      <li> New: 界面优化，可方便的把左栏和右上栏隐藏，腾出最大的显示区域给查询结果和Bug显示</li>
+      <li> New: 查询列表页面优化，调整了配色方案，增加了颜色区分，点击时加重背景。</li>
+      <li> New: 增强后台管理的功能</li>
+      <li> New: 发送邮件的时候，显示用户的真实姓名。</li>
+      <li> New: build版本可以从已有的记录中选择。</li>
+      <li> New: 修改了sql查询的错误提示方式，使之更加友好。</li>
+      <li> New: 显示当前用户的名称。</li>
+      <li> New: 调整了配置文件的结构，使之更加明确。</li>
+      <li> New: 启用新的Logo。</li>
+      <li> Fix: Bug严重程度恢复到纯数字显示</li>
+      <li> Fix: 可以查询某些域（比如AssignTo）的值为空的Bug</li>
+      <li> Fix: 去掉现在每个文件中的CVS Log信息，尽可能的减少BugFree的体积</li>
+      <li> Fix: 去掉Install.php导致的潜在安全隐患</li>
+      <li> Fix: 解决Bug系统的Cookie变量与其他系统冲突</li>
+      <li> Fix: 解决一个执行Install.php时候，安装程序js脚本报错的问题</li>
+      <li> Fix: 快捷键的表示采用windows的传统方式() (鸣谢网友.NetCobra)</li>
+      <li> Fix: 查询结果增加默认BugID排序</li>
+      <li> Fix: 历史记录按照时间先后顺序排序</li>
+      <li> Fix: 标题过长导致列表出现错位的问题解决了</li>
+      <li> Fix: 登录页面的问题，样式表在某些情况下不起作用的问题解决了</li>
+      <li> Fix: BugFree描述里面可以包含单引号了</li>
+      <li> Fix: BugFree描述里面可以添加程序代码了。</li>
+      <li> Fix: 标题里面含有网页代码也可以正常显示了</li>
+      <li> Fix: 指派给某个人，指派日期也随之变化</li>
+      <li> Fix: 修改了在IIS下面后台管理无法进入的问题。</li>
+      <li> Remove: 去掉可视化编辑，为后续的功能开发做准备。</li>
+    </ul>
+
+	<!-- Change Log of Version 0.5-->
+    <h3>BugFree Version 0.5 (2005-08-13)</h3>
+    <ul>
+      <li> New：支持UTF-8编码！BugFree由此开始支持Unicode，为未来发展打下重要基础</li>
+      <li> New：查询结果可以“全部导出”到Microsoft Excel中，然后利用Excel强大的数据统计、图示、打印等功能对Bug进行分析</li>
+      <li> New：修改SetupBug.inc.php和Install.php程序，增加BugFree目录和网址两项参数的自定义功能。IIS平台的用户可自己手工更改这两个参数保证BugFree的运行。</li>
+      <li> Fix: 后台管理左侧“项目和模块列表”也应该有上下移动的滚动条</li>
+      <li> Fix：把FunctionsMain.inc.php开始的php标签改为标准模式。(Thanks to Netelf:ukyo_wlp at 163 dot com)</li>
+      <li> Fix：修改bugGetModulePath的定义，去掉强制引用传递。(Thanks to Netelf:ukyo_wlp at 163 dot com)</li>
+      <li> Fix：抑制发信失败时的错误信息。</li>
+      <li> Fix：修改安装程序生成的配置文件中SmtpAuth变量的错误。</li>
+      <li> Team：BugFree开发小组正式成立，详情请访问网站： <a href="http://www.1zsoft.com/?q=node/80">BugFree开发小组成员</a>
+      <li> Thanks：感谢<a href="http://www.imobile.com.cn/" target="_blank">手机之家</a>站长<a href="http://www.paulgao.com.cn/" target="_blank">高春辉</a>先生，<a href="http://www.younote.com" target="_blank">YouNote</a>站长李梁先生对BugFree的支持。</li>
+    </ul>
+
+	<!-- Change Log of Version 0.4-->
+    <h3>BugFree Version 0.4 (2005-07-02)</h3>
+    <ul>
+      <li> 打造BugFree的新家：<a href="http://bugfree.1zsoft.com">http://bugfree.1zsoft.com</a>，BugFree 为【易软开源】网站的一个组成部分，关于【易软开源】网站，请点击此处：<a href="http://www.1zsoft.com" target="_blank">www.1zsoft.com</a></li>
+      <li> 增强编辑器功能，可以支持可视化的编辑</li>
+      <li> 改用phpmailer类来增强Email发送功能，windows下面的用户只需一个合法的email地址应该就可以发信了</li>
+      <li> 增加安装程序，可通过 BugFree/Install.php 来配置系统参数</li>
+      <li> 整理并完善 BugFree/Document中的文档，新增加了“BugFree常见问题解答(FAQ)”和“BugFree配置参数详细说明”</li>
+      <li> 修改LIMII -20,20的错误 (特别感谢网友 lixiaoliang@gmail.com 和 panzs@supcon.com)</li>
+      <li> 修改判断程序路径的方法，以适应虚拟主机的情况</li>
+      <li> 修改Error_reporting的参数设置</li>
+      <li> 改用Javascript来控制显示、隐藏框架，无需与服务器进行交互</li>
+      <li> 解决Bug: 通过左边栏点击“最近5个指派给我的Bug”显示模块信息错误</li>
+      <li> Bug激活时，可以重新指派，方便使用</li>
+      <li> 可以将某个自定义查询的条件发送到某个邮箱地址，以便共享。</li>
+    </ul>
+
+	<!-- Change Log of Version 0.3-->
+    <h3>BugFree Version 0.3 (2005-04-02)</h3>
+    <ul>
+      <li> 下载文件不应该用.rar格式，应该用.zip（Linux上也可直接用）</li>
+      <li> 默认有用户并且是管理权限也没在文档中指明</li>
+      <li> 把Bug信息显示和统计中的用户ID改成用户名显示</li>
+      <li> 去掉Smarty中的gzip</li>
+      <li> 缺少的adodb-iterator.inc.php文件</li>
+      <li> 首次登录时总是要显示一个“您还没有登录到系统，请首先登录BugFree!”对话框，然后才显示登录界面，去掉对话框</li>
+      <li> 添加用户时，在输入email时发现无法输入.info的信箱</li>
+      <li> BugSeverity字段没有真正发挥它的作用，将bugServerity的含义定义为下面四个级别 ---> 恢复到1，2，3，4</li>
+      <li> 完善查询表单的辅助功能，比如说如果选中了“模块路径”、“标题”等查询字段，操作符默认就改为“包含”。</li>
+      <li> setqueryForm()中的参数。现在默认取得是6，应该使用变量，就是BugConfig["QueryFieldNumber"]</li>
+      <li> BugHistory中的Action字段长度太短，导致will not fix 解决方案的Action被截调部分字符。</li>
+      <li> Admin中编辑项目和模块，要同时修改BugInfo表中的相应字段。</li>
+      <li> BugUserList函数需要将BugUser表里面没有而BugInfo表里面有的用户名都列出来。</li>
+      <li> 添加文件的时候，如果源文件没有扩展名，则增加一个默认的扩展名.txt。</li>
+      <li> 自动完成的时候，如果原来是文本框，而且用户输入了一些东西，需要加以保留。</li>
+      <li> 解决重复提交的bug的问题</li>
+      <li> 当关闭、解决、激活一个bug的时候，可以默认将光标设置在文本框中</li>
+      <li> statbug的代码错误</li>
+      <li> bug信息页面格式的调整：历史记录使用间隔色隔开</li>
+      <li> Notice: Undefined index: DOCUMENT_ROOT in F:\backup\BugFree\Include\SetupBug.inc.php on line 43</li>
+      <li> 增加文件Document/BugFree Install On Windows.txt : “在 Windows 平台上安装 BugFree 的详细步骤”</li>
+    </ul>
+    
+    <!-- Change Log of Version 0.2-->
+    <h3>BugFree Version 0.2 (2004-12-15)</h3>
+    <ul>
+      <li>全新的界面，显示空间更大，更加大气</li>
+      <li>符合你自定义查询条件的Bug改动时，会自动给你发信</li>
+      <li>Bug信息中增加了两个字段：操作系统、抄送。“抄送”的功能表示这个Bug有变</li>
+      <li>化时，也会发送给这些人</li>
+      <li>增强BugFree的查询功能：
+          <ul>
+            <li>分组的查询功能，更加方便使用</li>
+            <li>点击某个Bug的 OpenedBy、AssignedTo、ResolvedBy、Resolution，自动找出所有符合该项条件的所有Bug；</li>
+          </ul>
+      </li>
+      <li>增加Bug的多任务分派功能，新建一个Bug时可以同时指派给多个人，这对事物跟踪和数据校对类问题非常有用</li>
+      <li>添加多个附件</li>
+      <li>改变Severity的显示方式</li>
+      <li>增加BugFree的简单帐户管理</li>
+      <li>有快捷键支持</li>
+      <li>多语言支持，目前你可以选择英文界面</li>
+      <li>系统配置很灵活，可以根据使用情况自己定义</li>
+      <li>用Smarty技术把HTML和PHP代码分开，代码很清晰，易于维护</li>
+      <li>用Pear中标准的树状列表TreeMenu</li>
+      <li>使用ADO访问数据库</li>
+    </ul>
+    
+    <!-- Change Log of Version 0.11-->                              
+    <h3>BugFree Version 0.11(2004-10-26)</h3>
+    <ul>
+      <li>把软件名从 FreeBug 改为 BugFree (感谢科泰世纪陈榕第一个建议)</li>
+      <li>SourceForge上注册该项目http://sourceforge.net/projects/bugfree</li>
+    </ul>
+    
+    <!-- Change Log of Version 0.1-->
+    <h3>FreeBug Version 0.1(2004-10-11)</h3>
+    <ul>
+      <li>正式发布，命名为 FreeBug</li>
+      <li>借鉴微软公司软件研发理念、免费且开放源代码、基于Web的精简版Bug管理系统</li>
+    </ul>
+  <!-- InstanceEndEditable -->
+</div>
+
+<div class="Border">
+文档历史：
+<!-- InstanceBeginEditable name="log" -->
+<xmp>
+$Log: CHANGELOG.htm,v $
+Revision 1.10  2005/09/25 02:27:32  wwccss
+ * Add more change log to version 1.0.
+
+Revision 1.9  2005/09/14 06:48:21  bugfree
+ + add change log for Ver 1.0 which we are going to release on 2005/10/08
+
+Revision 1.8  2005/08/11 15:35:15  wwccss
+ * More change log of BugFree version 0.5
+
+Revision 1.7  2005/08/05 08:33:11  bugfree
+ * add Ver 0.5 change log
+
+Revision 1.6  2005/06/27 07:29:03  wwccss
+ * add bugfree.1zsoft.com, www.1zsoft.com links.
+
+Revision 1.5  2005/06/25 15:54:29  bugfree
+ + add change log of Ver 0.4 which will be released on Sat July 2, 2005
+</xmp>
+<!-- InstanceEndEditable -->
+</div>
+<div align="center">
+  <!-- InstanceBeginEditable name="clickcount" -->
+  <script src="http://bugfree.1zsoft.com/ClickCount.php?DocFile=CHANGELOG.htm"></script>
+  <!-- InstanceEndEditable -->
+</div>
+</body>
+<!-- InstanceEnd --></html>

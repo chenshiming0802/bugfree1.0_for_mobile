@@ -1,0 +1,111 @@
+.SmallFont
+{
+	font-family: "Tahoma, Arial, Courier";
+	font-size: 9pt;
+}
+.SmallerFont
+{
+	font-family: "Tahoma, Arial, Courier";
+	font-size: 9pt;
+}
+.MyButton
+{
+	font-family: "Tahoma, Arial, Courier";
+	font-size: 9pt;
+	cursor:hand;
+}
+.MyInput
+{
+	font-family: "Tahoma, Arial, Courier";
+	font-size: 9pt;
+	background-color: #E4E4E4;
+}
+.StrongText
+{
+	font-family: "Tahoma, Arial, Courier";
+	font-size: 9pt;
+	font-weight: bold;
+}
+.PanelTitle
+{
+	font-family: "Tahoma, Arial, Courier";
+	font-size: 9pt;
+	font-weight: bold;
+	color:green;
+}
+.RedText
+{
+	font-family: "Tahoma, Arial, Courier";
+	font-size: 9pt;
+	color: #FF0000;
+}
+.BgTable
+{
+	background-color:blue;
+	font-size:9pt;
+}
+.History
+{
+    font-family: "Tahoma,Arial,Courier,ËÎÌו";
+	background-color: #DDDDDD;
+	border: 1px solid #999999;
+    margin-right:  50px;
+    margin-top:    10px;
+    margin-bottom: 10px;
+    padding:       10px;
+}
+.Notes
+{
+    font-family: "Tahoma,Arial,Courier,ËÎÌו";
+    font-size:9pt;
+	border: 1px solid #999999;
+	background-color: #E4E4E4;
+	width: 100%;
+}
+.BgRow
+{
+	background-color: #E4E4E4;
+}
+.BgDarkRow
+{
+	background-color: #DEDBDE;
+}
+.TableHeader
+{
+    font-weight:bold;
+    font-size:10.5pt;
+}
+.AssignedTo
+{
+	background-color: #FFCF9C;
+}
+.OpenedBy
+{
+	background-color: #D6E3EF;
+}
+.ResolvedBy
+{
+	background-color: #B6F5CB;
+}
+body
+{
+	font-family: "Tahoma, Arial, Courier";
+	font-size: 9pt;
+	color: #000000;
+	background-color: #EFEFEF;
+}
+select
+{
+	font-family: "Arial,Tahoma";
+	font-size: 9pt;
+	color: #000000;
+	background-color: #E4E4E4;
+}
+a:link,a:visited
+{
+    text-decoration: none;
+}
+a:hover 
+{
+	background-color: #CCCCCC;
+}
