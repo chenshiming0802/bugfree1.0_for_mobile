@@ -8,6 +8,11 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+import javax.net.ssl.HttpsURLConnection;
+import javax.net.ssl.SSLContext;
+import javax.net.ssl.SSLSocketFactory;
+import javax.net.ssl.TrustManager;
+
 import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
 import android.app.Dialog;
@@ -131,15 +136,15 @@ public class UpdateManager
 			// 把version.xml放到网络上，然后获取文件信息
 			ParseXmlService service = new ParseXmlService();
 			try {
-				//String path = "http://192.168.1.105/MyBugFree/version.xml";
-				String path = "http://testenv.bsp.bsteel.net/baosteel_cas2/MyBugFree/version.xml";
+				//String path = "http://testenv.bsp.bsteel.net/baosteel_cas2/MyBugFree/version.xml";
+				String path = "https://raw.githubusercontent.com/chenshiming0802/bugfree1.0_for_mobile/master/dist/bugfree1.0_for_android/version.xml";
 				URL url = new URL(path);
 				conn = (HttpURLConnection) url.openConnection();
 				conn.setReadTimeout(5 * 1000);
 				conn.setRequestMethod("GET");
 				inStream = conn.getInputStream();
 				remoteVersion = service.parseXml(inStream);
-
+				
 			} catch (Exception e) {
 				e.printStackTrace();
 			} finally {
@@ -169,7 +174,7 @@ public class UpdateManager
 		try
 		{
 			// 获取软件版本号，对应AndroidManifest.xml下android:versionCode
-			versionCode = context.getPackageManager().getPackageInfo("com.sprcore.mybugfree", 0).versionCode;
+			versionCode = context.getPackageManager().getPackageInfo("com.sprcore.android.mbf.ui", 0).versionCode;
 		} catch (NameNotFoundException e)
 		{
 			e.printStackTrace();
