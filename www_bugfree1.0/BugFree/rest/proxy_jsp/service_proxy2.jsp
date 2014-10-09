@@ -11,7 +11,7 @@
 <%!
 // ucore1 ADE1C062E16EAB4AACA11F7F89053FFD==>chenshiming
 //login test: http://testenv.bsp.bsteel.net/baosteel_cas2/service_proxy2.jsp?_SERVICE_=dologin2.php&userName=chenshiming&userPassword=password
-//query test:http://testenv.bsp.bsteel.net/baosteel_cas2/service_proxy2.jsp?_SERVICE_=buginfos2.php&pageIndex=2&pageSize=3&isAssignMe=1  
+//query test:http://testenv.bsp.bsteel.net/baosteel_cas2/service_proxy2.jsp?_SERVICE_=buginfos2.php&pageIndex=1&pageSize=3&isAssignMe=1  
 	public static String jsonProxyPost(HttpServletRequest request)
 			throws Exception {
 		String aesPassword = "73C58BAFE578C59366D8C995CD0B9D6D";	
@@ -211,5 +211,9 @@ public static String parseByte2HexStr(byte buf[]) {
 }
 %>
 <%
-		out.println(jsonProxyPost(request));
+response.setHeader("Access-Control-Allow-Origin","*"); 
+response.setHeader("Access-Control-Allow-Methods","POST, GET"); 
+response.setHeader("Access-Control-Allow-Headers","ucore1"); 
+response.setHeader("Access-Control-Max-Age","1728000"); 
+out.println(jsonProxyPost(request));
 %>
