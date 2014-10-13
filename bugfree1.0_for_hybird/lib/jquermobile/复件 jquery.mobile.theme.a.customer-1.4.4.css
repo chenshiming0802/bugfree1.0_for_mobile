@@ -1,0 +1,78 @@
+/*标题栏：背景黑色，文字白色*/
+.ui-bar-a,
+.ui-page-theme-a .ui-bar-inherit,
+html .ui-bar-a .ui-bar-inherit,
+html .ui-body-a .ui-bar-inherit,
+html body .ui-group-theme-a .ui-bar-inherit {
+	background-color: 			#333333 /*{a-bar-background-color}*/;
+	border-color:	 		#cccccc /*{a-bar-border}*/;
+	color: 					#ffffff /*{a-bar-color}*/;
+	text-shadow: 0 /*{a-bar-shadow-x}*/ 1px /*{a-bar-shadow-y}*/ 0 /*{a-bar-shadow-radius}*/ 	#eee /*{a-bar-shadow-color}*/;
+	font-weight: bold;
+}
+/*底部bar按钮，颜色灰色*/
+.ui-bar-a,
+.ui-page-theme-a .ui-bar-inherit .ui-btn,
+html .ui-bar-a .ui-bar-inherit .ui-btn,
+html .ui-body-a .ui-bar-inherit .ui-btn,
+html body .ui-group-theme-a .ui-bar-inherit .ui-btn{
+	background-color: #ffffff;
+	border-color: #999999;
+	color: #999999;
+	text-shadow: 0 1px 0 #cccccc;
+}
+/*底部bar激活按钮，颜色绿色*/ 
+.ui-bar-a,
+.ui-page-theme-a .ui-bar-inherit .ui-btn-active,
+html .ui-bar-a .ui-bar-inherit .ui-btn-active,
+html .ui-body-a .ui-bar-inherit .ui-btn-active,
+html body .ui-group-theme-a .ui-bar-inherit .ui-btn-active{
+	background-color: #ffffff;
+	border-color: #33cc33;
+	color: #33cc33;
+	text-shadow: 0 1px 0 #66cc66;
+} 
+/*底部bar激活按钮，颜色绿色*/ 
+.ui-bar-a,
+.ui-page-theme-a .ui-bar-inherit .ui-btn-active:BEFORE,
+html .ui-bar-a .ui-bar-inherit .ui-btn-active:BEFORE,
+html .ui-body-a .ui-bar-inherit .ui-btn-active:BEFORE,
+html body .ui-group-theme-a .ui-bar-inherit .ui-btn-active:BEFORE{
+	background-color: red;
+	border-color: #33cc33;
+	color: #33cc33;
+	text-shadow: 0 1px 0 #66cc66;
+} 
+
+p{
+	color: #999999;
+	text-shadow: 0 1px 0 #cccccc;
+}
+ 
+/* 列表背景是白色，点击后灰色*/
+/* Button up */
+.ui-page-theme-a .ui-btn,
+html .ui-bar-a .ui-btn,
+html .ui-body-a .ui-btn,
+html body .ui-group-theme-a .ui-btn,
+html head + body .ui-btn.ui-btn-a,
+/* Button visited */
+.ui-page-theme-a .ui-btn:visited,
+html .ui-bar-a .ui-btn:visited,
+html .ui-body-a .ui-btn:visited,
+html body .ui-group-theme-a .ui-btn:visited,
+html head + body .ui-btn.ui-btn-a:visited {
+	background-color: 			#ffffff /*{a-bup-background-color}*/;
+	border-color:	 		#ddd /*{a-bup-border}*/;
+	text-shadow: 0 /*{a-bup-shadow-x}*/ 1px /*{a-bup-shadow-y}*/ 0 /*{a-bup-shadow-radius}*/ #f3f3f3 /*{a-bup-shadow-color}*/;
+}
+/* Button hover */
+.ui-page-theme-a .ui-btn:hover,
+html .ui-bar-a .ui-btn:hover,
+html .ui-body-a .ui-btn:hover,
+html body .ui-group-theme-a .ui-btn:hover,
+html head + body .ui-btn.ui-btn-a:hover {
+	background-color: 			#cccccc /*{a-bhover-background-color}*/;
+	border-color:	 		#ddd /*{a-bhover-border}*/;
+	text-shadow: 0 /*{a-bhover-shadow-x}*/ 1px /*{a-bhover-shadow-y}*/ 0 /*{a-bhover-shadow-radius}*/ #f3f3f3 /*{a-bhover-shadow-color}*/;
+}

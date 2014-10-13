@@ -1,0 +1,169 @@
+.clear{
+	clear: both;
+}
+
+/*list样式，demo见mbf_assignMePage.php*/
+.listView .listView_h{
+	color:#000000;
+	font-size: 14px;
+	font-weight: bold;
+}
+.listView .listView_l p{
+	color:#999999;
+	text-shadow: 0 1px 0  #f3f3f3 ;
+	font-size: 12px;
+	line-height: 14px;
+	font-weight: bold;
+}
+.listView .listView_l p i{
+	font-size: 16px;
+}
+.listView p.red{
+	color:red;
+}
+.listView .listView_r{
+	position:absolute;
+	top:30px;
+	right: 28px;
+	width:50px;
+	text-align: center;
+	background-color: #999999;
+	border:1px solid #000000;
+	border-radius:4px;	
+}
+.listView .listView_r p{
+	color:#999999;
+	font-size: 12px;
+	line-height: 12px;
+	font-weight: bold;
+	color:white;
+}
+.listView .arrow{
+	margin-right: 10px;
+	color:#999999;
+	text-shadow: 0 1px 0  #f3f3f3 ;
+	width:10px;
+	position:absolute;
+	top:10px;
+	right:10px;
+}
+
+/*详情画面 demo见mbf_serviceDetailPage.php*/
+.detailContent{
+	padding: 0px;
+}
+.detailMain{
+	background-color: white;
+	padding-left: 20px;
+}
+.blackM{
+	height:15px;
+}
+.blackLine{
+	height:1px;
+}
+
+/*详情画面 line demo见mbf_profilePage.php*/
+.detailLine{
+	background-color: #ffffff;
+	width: 100%;
+	padding: 10px;
+	position:relative;
+}
+.detailLine .pic{
+	padding-top: 5px;
+	float:left;
+}
+.detailLine .info{
+	margin-left:75px;
+	margin-top: 13px;
+	font-size: 16px;
+}
+.detailLine h1{
+	font-color:#000000;
+	font-size: 14px;
+	font-weight: bold;
+}
+.detailLine h2{
+	color:#999999;
+	text-shadow: 0 1px 0  #f3f3f3 ;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 15px;
+}
+
+.detailLine .la{
+	font-color:#000000;
+	font-size: 14px;
+	font-weight: bold;
+	float:left;
+}
+.detailLine .va{
+	margin-left:75px;	
+	margin-right: 28px;
+	color:#999999;
+	text-shadow: 0 1px 0  #f3f3f3 ;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 15px;
+	text-align: right;
+}
+.detailLine .arrow{
+	margin-right: 10px;
+	color:#999999;
+	text-shadow: 0 1px 0  #f3f3f3 ;
+	width:10px;
+	position:absolute;
+	top:7px;
+	right:20px;
+}
+/*替换jquerymobile的nav*/
+#nav{
+	
+}
+#nav ul{
+	list-style-type:none;
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+}
+#nav ul li{
+	float:left;
+	background-color: #ffffff;
+	width: 25%;
+	height:48px;
+	text-align: center;
+
+}
+#nav ul li a{
+	margin-top: 5px;
+	padding: 0px;
+	text-decoration:none;
+	display: block;
+	color:#999999;
+	text-shadow: 0 1px 0  #f3f3f3 ;		
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 15px;
+}
+#nav ul li .active{
+	color: red;
+}
+#nav ul li a i{
+	font-size: 25px;
+}
+/*替换header的icon*/
+#header_l{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+#header_r{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+#header_l i,#header_r i{
+	font-size: 25px;
+	color:#ffffff;
+}

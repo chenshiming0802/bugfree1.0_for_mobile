@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="stylesheet" href="lib/font-awesome-4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="js/lib/jquery.mobile-1.4.4.min.css">
+    <link rel="stylesheet" href="lib/jquermobile/jquery.mobile.theme.a.customer-1.4.4.css">
+ 	<link rel="stylesheet" href="webdocs/web.css">
+    <script src="js/lib/require.min.js"></script>
+    <script src="js/tools.js"></script>
+    <script src="js/app_tools.js"></script>
+    <script src="js/main.js"></script>
+
+<style type="text/css">
+a{
+	text-decoration:none;
+}
+.fade{
+	display:none;
+}
+.page{
+	display:none;
+}
+</style>	    
+</head>
+
+<body>
+
+<!--===========================SEPERATE==============================-->
+	<!--
+	Flash UI
+	http://127.0.0.1/bugfree1.0_for_hybird/index.html#flash?
+	-->
+	<div data-role="page" id="flash" class="page">
+		<div data-role="header">
+		</div>
+		<div data-role="content">
+			<br/><br/><br/>
+			<h2 style="text-align: center;">东方钢铁</h2>
+			<h1 style="text-align: center;">客户服务系统</h1><br/>
+			<p style="text-align: center;" >Mobile Apps版本</p>
+		</div>
+	</div>
+<!--===========================SEPERATE==============================-->
+	<!--
+	登录UI
+	http://127.0.0.1/bugfree1.0_for_hybird/index.html#login?
+	-->
+	<div data-role="page" id="login" class="page">
+		<div data-role="header">
+			<h1>登录客户服务系统</h1>
+		</div>
+
+		<div data-role="content">
+			<BR>
+			<input type="text" name="textinput-1" id="login_username" placeholder="请输入登录帐号名" value="chenshiming">		
+			<input type="password" name="textinput-2" id="login_password" placeholder="请输入登录密码" value="password">
+			<!--
+			<div class="ui-field-contain">
+				<label for="flip-5">记住密码:</label>
+				<select name="flip-5" id="flip-5" data-role="slider" data-mini="true">
+					<option value="off">否</option>
+					<option value="on">是</option>
+				</select>
+			</div>
+			-->
+			<BR>
+			<BR>			
+			<input type="button" value="登  录" id="login_submit">
+		</div>
+		
+		<div data-role="footer">
+		</div>
+	</div>
+<!--===========================SEPERATE==============================-->
+	<!--
+	指派给我列表BEGIN
+	http://127.0.0.1/bugfree1.0_for_hybird/index.html#services?assignme
+	mecreate
+	-->
+	<div data-role="page" id="services" class="page">
+		<div data-role="header" data-position="fixed" >
+			<div id="header_l"><a href="mbf_homePage.php" data-transition="flip"><i class="fa fa-home fa-fw"></i></a></div>
+			<h1 id="service_head" class="fade">我的任务</h1>
+			<div id="header_r"><a id="services_refresh" data-transition="flip"><i class="fa fa-refresh fa-fw"></i></a></div>
+		</div>
+	
+		<div data-role="content">
+			<ul data-role="listview" data-inset="false" id="services_list" class="fade">
+				<li>
+					<div class="listView">
+						<a href="mbf_serviceDetailPage.php"  data-transition="slide">
+							<div class="listView_h">0056141 会员和频道申请报表无法和频道申请报表无法下载</div>
+							<div class="listView_l">
+								<p> <i class="fa fa-tags fa-fw"></i>
+									BSP平台/会员管理模块
+								</p>
+								<p> <i class="fa fa-edit fa-fw"></i>
+									刘静 2014/09/10 18:00 创建
+								</p>
+								<p class="red">
+									<i class="fa fa-exclamation-triangle fa-fw"></i>
+									期望 2014/09/10 17:00 完成
+								</p>
+							</div>
+							<div class="listView_r">
+								<p>Action</p>
+								<p>陈市明</p>
+								<p>1天前</p>
+							</div>
+							<div class="arrow"><i class="fa fa-chevron-right fa-fw"></i></div>
+						</a>
+					</div>
+				</li>											
+			</ul>
+		</div>
+	</div>
+    <script id="services_list_template" type="text/template">
+    <% _.each( collection.toJSON(), function( model, id ) { %>
+				<li  class="ui-li-static ui-body-inherit ui-first-child ui-last-child">
+					<div class="listView">
+						<a href="mbf_serviceDetailPage.php"  data-transition="slide">
+							<div class="listView_h"><%=model.bugId%> <%=model.bugTitle%></div>
+							<div class="listView_l">
+								<p> <i class="fa fa-tags fa-fw"></i>
+									<%=model.projectName%><%=model.moduleName%>
+								</p>
+								<p> <i class="fa fa-edit fa-fw"></i>
+									<%=model.openedByRealUserName%> <%=model.openedDate%> 创建
+								</p>
+								<p ><!--class="red"-->
+									<i class="fa fa-exclamation-triangle fa-fw"></i>
+									期望 <%=model.fixedTime%> 完成
+								</p>
+							</div>
+							<div class="listView_r">
+								<p><%=model.bugStatus%></p>
+								<p><%=model.assignedToRealUserName%></p>
+								<p><!--TODO最近更新时间--></p>
+							</div>
+							<div class="arrow"><i class="fa fa-chevron-right fa-fw"></i></div>
+						</a>
+					</div>
+				</li>
+    <% }); %>
+    </script>	
+    <!--指派给我列表END-->
+
+<!--===========================SEPERATE==============================-->
+
+	<!--
+	我的设置BEGIN
+	http://127.0.0.1/bugfree1.0_for_hybird/index.html#profile?
+	mecreate
+	-->	
+	<div data-role="page" id="profile" class="page">
+		<div data-role="header" data-position="fixed">		
+			<div id="header_l"><a href="mbf_homePage.php" data-transition="flip"><i class="fa fa-home fa-fw"></i></a></div>
+			<h1>我的信息</h1>
+			<div id="header_r"><a href="#" data-transition="flip" class="refresh"><i class="fa fa-refresh fa-fw"></i></a></div>
+		</div>
+
+		<div data-role="content" class="detailContent">
+			<div class="blackM"></div>
+			<div class="detailLine">
+				<div class="pic">
+					<img src="webdocs/images/touxiagn.gif" width="60px" height="60px"/>
+				</div>
+				<div class="info">
+					<h1 class="fade" id="profile_userrealname">陈市明</h1>
+					<h2 class="fade" id="profile_username">帐号:chenshiming</h2>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="blackM"></div>
+
+			<div  class="detailLine">
+				<div class="la">邮箱地址</div>
+				<div class="va" class="fade" id="profile_email">xxx@xxx.com</div>
+				<div class="clear"></div>
+			</div>
+			<div class="blackLine"></div>
+			<div  class="detailLine">
+				<div class="la">手机号码</div>
+				<div class="va"  class="fade" id="profile_phone">TODO</div>
+				<div class="clear"></div>
+			</div>		
+			<div class="blackM"></div>	
+
+			<div  class="detailLine">
+				<div class="la">当前缓存大小</div>
+				<div class="va">清空</div>
+				<div class="arrow"><i class="fa fa-chevron-right fa-fw"></i></div>
+				<div class="clear"></div>
+			</div>
+			<div class="blackLine"></div>
+			<div  class="detailLine">
+				<div class="la">常用回复意见</div>
+				<div class="va">默认</div>
+				<div class="arrow"><i class="fa fa-chevron-right fa-fw"></i></div>
+				<div class="clear"></div>
+			</div>		
+			<div class="blackM"></div>											
+		</div>
+	</div>
+	<!--我的设置END-->
+
+<!--===========================SEPERATE==============================-->
+<!--===========================SEPERATE==============================-->
+
+	<!--公共代码部分begin-->
+	<!--Footer部分-->
+	<script id="common_footer_template" type="text/template">
+	<div id="common_footer" data-role="footer" data-position="fixed"  role="contentinfo" class="ui-footer ui-bar-inherit ui-footer-fixed slideup">
+		<div id="nav">
+			<ul>
+				<li>
+					<a 	href="#services?assignme" 
+						data-transition="slide" 
+						class="common_footer_assignme"
+						> <i class="fa fa-tasks fa-fw"></i>
+						<BR>我的任务</a>
+				</li>
+				<li>
+					<a 	href="#services?mecreate" 
+						data-transition="slide" 
+						class="common_footer_mecreate"
+						> <i class="fa fa-tags fa-fw"></i><BR>
+						我创建的
+					</a>
+				</li>
+				<li>
+					<a 	href="#profile?" 
+						data-transition="slide" 
+						class="common_footer_profile"
+						>
+						<i class="fa fa-user fa-fw"></i><BR>
+						我的信息
+					</a>
+				</li>
+				<li>
+					<a 	href="#login?logout" 
+						data-transition="slide" 
+						class="common_footer_logout"
+						>
+						<i class="fa fa-sign-out fa-fw"></i><BR>
+						注销
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>	
+	</script>
+	<!--公共代码部分end-->
+</body>
+
+</html>
