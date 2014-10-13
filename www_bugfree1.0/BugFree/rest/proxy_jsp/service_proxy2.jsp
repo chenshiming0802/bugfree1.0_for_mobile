@@ -50,10 +50,10 @@
 			if(json==null){
 				return "";
 			}
-			JSONObject jsonObject = JSONObject.fromObject(json);
-		   	String sessionUserName = jsonObject.getString("userName");
+			JSONObject jsonObject = JSONObject.fromObject(json);	   	
 		   	String resultFlag = jsonObject.getString("resultFlag");
 		   	if(resultFlag!=null && resultFlag.equals("0")){
+		   		String sessionUserName = jsonObject.getString("userName");
 			   	byte[] encryptResult = encrypt(sessionUserName, aesPassword);
 				String encryptResultStr = parseByte2HexStr(encryptResult);	
 			   	jsonObject.put("ucore1", encryptResultStr);   
