@@ -74,7 +74,8 @@ function init(){
 }
 
 function l($content){
-        $file_name = "/home/bugfree/BugFree1.0/rest/logs/log.dat";
+        //$file_name = "/home/bugfree/BugFree1.0/rest/logs/log.dat";
+        $file_name = "c://log.dat";
         $file_pointer = fopen($file_name, "a");
         fwrite($file_pointer, $content."\r\n"); 
         fclose($file_pointer);   
@@ -249,4 +250,132 @@ function rest_bugGetUserACL($BugUserName)
     }
 }
 
+
+
+function rest_bugAddFile($userName,$ProjectID,$BugIdList)
+{
+    global $MyDB;
+    global $BugConfig;
+    global $TplConfig;
+
+    // Explode the BugIdList to array.
+    $BugIdList = explode(",",$BugIdList);
+
+    // Get uploaded files array.
+    $BugFileList = $_FILES[$BugConfig["File"]["BugFileName"]];
+
+    // Init the return array ResultInfo.
+    $ResultInfo["Success"] = true;
+
+    // Cycle the array, deal with every file.
+    for($I = 0 ; $I < count($BugFileList["name"]); $I ++)
+    {
+        if(!empty($BugFileList["name"][$I]))
+        {
+            // Set file title.
+            if(!empty($_POST["FileTitle"][$I]))
+            {
+                $FileTitle = $_POST["FileTitle"][$I];
+            }
+            else
+            {
+                $FileTitle = $BugFileList["name"][$I];
+            }
+
+            // Push FileTitle to $FileTitleList.
+            $FileTitleList[] = $FileTitle;
+
+            // Get fize size.
+            $FileSize = $BugFileList["size"][$I];
+
+            // Judge the fize.
+            if($FileSize > $BugConfig["File"]["MaxFileSize"])
+            {
+                $ResultInfo["Success"]     = false;
+                $ResultInfo["ErrorInfo"][] = $FileTitle . ":Size exceed,max size:".$BugConfig["File"]["MaxFileSize"].",current size:".$FileSize ;
+                continue;
+            }
+            // Change file size to human type.
+            else
+            {
+                if($FileSize <= 1024 * 1024 )
+                {
+                    $FileSize = round($FileSize / 1024,2) . "KB";
+                }
+                else
+                {
+                    $FileSize = round($FileSize / (1024 * 1024),2) . "MB";
+                }
+            }
+
+            // Get file type.
+            $FileType = explode(".",$BugFileList["name"][$I]);
+            $FileType = strtolower($FileType[1]);
+
+            // Change dangerous file to txt.
+            if(in_array($FileType,$BugConfig["File"]["DangerousTypeList"]) or empty($FileType))
+            {
+                $FileType = "txt";
+            }
+
+            // Create dir to store all uploaded files of this project.
+            $PartProjectPath = "Project". $ProjectID;
+            $FullProjectPath = $BugConfig["ScriptDir"] . "/../" . $BugConfig["File"]["UploadDirectory"] . "/" . $PartProjectPath;
+            if(!is_dir($FullProjectPath))
+            {
+                if(!@mkdir($FullProjectPath))
+                {
+                    $ResultInfo["Success"]     = false;
+                    $ResultInfo["ErrorInfo"][] = $TplConfig["AddBug"]["CantCreateDIR"] . ": " . $FullProjectPath;
+                    return $ResultInfo;
+                }
+            }
+
+            // Make directory under the project directory to store today uploaded files.
+            $PartTodayPath   = date("Ym");
+            $FullTodayPath   = $FullProjectPath . "/" .$PartTodayPath;
+            if(!is_dir($FullTodayPath))
+            {
+                if(!@mkdir($FullTodayPath))
+                {
+                    $ResultInfo["Success"]     = false;
+                    $ResultInfo["ErrorInfo"][] = $TplConfig["AddBug"]["CantCreateDIR"] . ": " . $FullTodayPath;;
+                    return $ResultInfo;
+                }
+            }
+
+            // Copy file
+            $PartFileName = date("His") . $I . "." .$FileType;
+            $FullFileName = $PartProjectPath . "/" . $PartTodayPath . "/" . $PartFileName;
+            if(!@copy ($BugFileList["tmp_name"][$I],$FullTodayPath . "/" . $PartFileName))
+            {
+                $ResultInfo["Success"]     = false;
+                $ResultInfo["ErrorInfo"][] = $TplConfig["AddBug"]["CantCopyFile"] . ": " . $FullFileName;
+                continue;
+            }
+
+            // Insert into BugFile table.
+            foreach($BugIdList as $BugID)
+            {
+                $SQL = "INSERT INTO BugFile(BugID,FileTitle,FileName,FileType,FileSize,AddUser,AddDate) VALUES(
+                                            '$BugID','$FileTitle','$FullFileName','$FileType','$FileSize','{$userName}',now())";
+                if(!$MyDB->query($SQL))
+                {
+                    die($MyDB->errorMsg());
+                }
+            }
+
+            // Delete the temp file.
+            @unlink($BugFileList["tmp_name"][$I]);
+        }
+    }
+
+    // Return.
+    if($ResultInfo["Success"])
+    {
+        $ResultInfo["Success"]  = true;
+        $ResultInfo["FileList"] = @join(",",$FileTitleList);
+    }
+    return $ResultInfo;
+}
 ?>

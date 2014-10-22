@@ -7,7 +7,8 @@
     $bugId = $_REQUEST['bugId']; //$UserName = "chenshiming";
     $userName = $_REQUEST['userName'];
     $resolution = $_REQUEST['resolution'];
-    $notes = $_REQUEST['notes'];
+    $Notes = $_POST['notes'];
+    $Notes = iconv("UTF-8","GB2312//IGNORE",$Notes);
 
 	$_SESSION["BugUserAclSQL"] = " 1=1 ";
 	$_SESSION["BugUserName"] = $userName;
