@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="stylesheet" href="lib/font-awesome-4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="js/lib/jquery.mobile-1.4.4.min.css">
+    <link rel="stylesheet" href="lib/jquermobile/jquery.mobile.theme.a.customer-1.4.4.css">
+ 	<link rel="stylesheet" href="webdocs/web.css">
+    <script src="js/lib/require.min.js"></script>
+    <script src="js/tools.js"></script>
+    <script src="js/app_tools.js"></script>
+    <script src="js/main.js"></script>
+
+<style type="text/css">
+a{
+	text-decoration:none;
+}
+.fade1{
+	display:none;
+}
+.page{
+	display:none;
+}
+</style>	    
+</head>
+
+<body>
+
+<!--===========================SEPERATE==============================-->
+	<!--
+	指派给我列表BEGIN
+	http://127.0.0.1:81/index.html#services?assignme
+	mecreate
+	-->z
+	<div data-role="page" id="usersearch" class="page">
+		<div data-role="header" data-position="fixed" >
+			<div id="header_l"><a href="mbf_homePage.php" data-transition="flip"><i class="fa fa-home fa-fw"></i></a></div>
+			<h1 id="service_head" class="fade">我的任务</h1>
+			<div id="header_r"><a id="services_refresh" data-transition="flip"><i class="fa fa-refresh fa-fw"></i></a></div>
+			<input type="search" name="password" id="search" value="" placeholder="请输入员工姓名或帐号">
+		</div>
+	
+		<div data-role="content">
+			<ul data-role="listview" data-inset="false" id="services_list" class="fade">
+				<li>
+					<div class="listView">
+						<a href="mbf_service.php"  data-transition="slide">
+							<div class="listView_h">陈市明&lt;chenshiming&gt;</div>	
+						</a>
+					</div>
+				</li>															
+			</ul>
+		</div>
+	</div>
+	<script id="usersearch_list_template" type="text/template">
+	<% _.each( collection, function( model, id ) { %>
+				<li  class="ui-li-static ui-body-inherit ui-first-child ui-last-child">
+					<div class="listView">
+						<a href="mbf_service.php"  data-transition="slide">
+							<div class="listView_h">陈市明&lt;chenshiming&gt;</div>	
+						</a>
+					</div>
+				</li>
+	<% }); %>
+	</script>	
+    <!--指派给我列表END-->
+<!--===========================SEPERATE==============================-->
+
+
+</body>
+
+</html>

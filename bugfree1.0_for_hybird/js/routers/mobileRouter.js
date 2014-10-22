@@ -7,7 +7,9 @@ define([
     //customer view-xml
     "../views/login",
     "../views/services",
-    "../views/profile"
+    "../views/service",
+    "../views/profile",
+    "../views/usersearch"
 ], function(
     $,
     Backbone,
@@ -15,7 +17,9 @@ define([
     //cusomter view-obj
     login,
     services,
-    profile
+    service,
+    profile,
+    usersearch
 ) {
     var viewCache = new Array();
     var CategoryRouter = Backbone.Router.extend({
@@ -49,12 +53,23 @@ define([
             if (param == null || param == '') {
                 params = new Array();
             } else {
-                params = param.split(",");
+                params = param.split("&");
             }
             T.log("create view-#" + viewName);
-            this.createView(viewName, {
+            var view = this.createView(viewName, {
                 el: "#" + viewName
-            }).onLoad(viewName, params);
+            });  
+            var ret = view.onLoad(viewName, params);   
+            if(ret==true){ //返回ture则继续调用resume
+                //是否需要刷新数据
+                if(T.isNextPageRefresh==true){        
+                    if(view.onResume){
+                        view.onResume(viewName, params);
+                    }
+                }else{
+                    T.isNextPageRefresh = true;
+                }
+            }      
             $.mobile.loading('hide');
         }
     });

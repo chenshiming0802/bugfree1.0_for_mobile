@@ -33,7 +33,7 @@ a{
 <!--===========================SEPERATE==============================-->
 	<!--
 	Flash UI
-	http://127.0.0.1/bugfree1.0_for_hybird/index.html#flash?
+	http://127.0.0.1:81/index.html#flash?
 	-->
 	<div data-role="page" id="flash" class="page">
 		<div data-role="header">
@@ -48,7 +48,7 @@ a{
 <!--===========================SEPERATE==============================-->
 	<!--
 	登录UI
-	http://127.0.0.1/bugfree1.0_for_hybird/index.html#login?
+	http://127.0.0.1:81/index.html#login?
 	-->
 	<div data-role="page" id="login" class="page">
 		<div data-role="header">
@@ -57,8 +57,8 @@ a{
 
 		<div data-role="content">
 			<BR>
-			<input type="text" name="textinput-1" id="login_username" placeholder="请输入登录帐号名" value="chenshiming">		
-			<input type="password" name="textinput-2" id="login_password" placeholder="请输入登录密码" value="password">
+			<input type="text" name="textinput-1" id="login_username" placeholder="请输入登录帐号名" value="">		
+			<input type="password" name="textinput-2" id="login_password" placeholder="请输入登录密码" value="">
 			<!--
 			<div class="ui-field-contain">
 				<label for="flip-5">记住密码:</label>
@@ -79,21 +79,27 @@ a{
 <!--===========================SEPERATE==============================-->
 	<!--
 	指派给我列表BEGIN
-	http://127.0.0.1/bugfree1.0_for_hybird/index.html#services?assignme
+	http://127.0.0.1:81/index.html#services?assignme
 	mecreate
 	-->
 	<div data-role="page" id="services" class="page">
 		<div data-role="header" data-position="fixed" >
-			<div id="header_l"><a href="mbf_homePage.php" data-transition="flip"><i class="fa fa-home fa-fw"></i></a></div>
+			<div id="header_l"><a class="servicesearch_div" href="javascript:void(0)" data-rel="back" data-transition="flip" id="servicessearch_back"><i class="fa fa-chevron-left fa-fw"></i></a></div>
 			<h1 id="service_head" class="fade">我的任务</h1>
-			<div id="header_r"><a id="services_refresh" data-transition="flip"><i class="fa fa-refresh fa-fw"></i></a></div>
+			<div id="header_r">
+				<a id="services_search" href="#services?search" data-transition="flip"><i class="fa fa-search fa-fw"></i></a>
+				<a id="services_refresh" data-transition="flip"><i class="fa fa-refresh fa-fw"></i></a>
+			</div>
+			<div class="servicesearch_div">
+			<input type="search" name="password" id="servicesearch_input" value="" placeholder="请输入Service号或标题关键字">
+			</div>
 		</div>
 	
 		<div data-role="content">
 			<ul data-role="listview" data-inset="false" id="services_list" class="fade">
 				<li>
 					<div class="listView">
-						<a href="mbf_serviceDetailPage.php"  data-transition="slide">
+						<a  data-transition="slide">
 							<div class="listView_h">0056141 会员和频道申请报表无法和频道申请报表无法下载</div>
 							<div class="listView_l">
 								<p> <i class="fa fa-tags fa-fw"></i>
@@ -115,15 +121,15 @@ a{
 							<div class="arrow"><i class="fa fa-chevron-right fa-fw"></i></div>
 						</a>
 					</div>
-				</li>											
+				</li>															
 			</ul>
 		</div>
 	</div>
-    <script id="services_list_template" type="text/template">
-    <% _.each( collection.toJSON(), function( model, id ) { %>
+	<script id="services_list_template" type="text/template">
+	<% _.each( collection, function( model, id ) { %>
 				<li  class="ui-li-static ui-body-inherit ui-first-child ui-last-child">
 					<div class="listView">
-						<a href="mbf_serviceDetailPage.php"  data-transition="slide">
+						<a href="#service?<%=model.bugId%>"  data-transition="slide">
 							<div class="listView_h"><%=model.bugId%> <%=model.bugTitle%></div>
 							<div class="listView_l">
 								<p> <i class="fa fa-tags fa-fw"></i>
@@ -146,25 +152,26 @@ a{
 						</a>
 					</div>
 				</li>
-    <% }); %>
-    </script>	
+	<% }); %>
+	</script>	
     <!--指派给我列表END-->
+ 
 
 <!--===========================SEPERATE==============================-->
 
 	<!--
 	我的设置BEGIN
-	http://127.0.0.1/bugfree1.0_for_hybird/index.html#profile?
+	http://127.0.0.1:81/index.html#profile?
 	mecreate
 	-->	
 	<div data-role="page" id="profile" class="page">
 		<div data-role="header" data-position="fixed">		
-			<div id="header_l"><a href="mbf_homePage.php" data-transition="flip"><i class="fa fa-home fa-fw"></i></a></div>
+			<div id="header_l"></div>
 			<h1>我的信息</h1>
 			<div id="header_r"><a href="#" data-transition="flip" class="refresh"><i class="fa fa-refresh fa-fw"></i></a></div>
 		</div>
 
-		<div data-role="content" class="detailContent">
+		<div data-role="content">
 			<div class="blackM"></div>
 			<div class="detailLine">
 				<div class="pic">
@@ -190,7 +197,7 @@ a{
 				<div class="clear"></div>
 			</div>		
 			<div class="blackM"></div>	
-
+			<!--
 			<div  class="detailLine">
 				<div class="la">当前缓存大小</div>
 				<div class="va">清空</div>
@@ -203,12 +210,167 @@ a{
 				<div class="va">默认</div>
 				<div class="arrow"><i class="fa fa-chevron-right fa-fw"></i></div>
 				<div class="clear"></div>
-			</div>		
+			</div>	
+			-->	
 			<div class="blackM"></div>											
 		</div>
 	</div>
 	<!--我的设置END-->
 
+<!--===========================SEPERATE==============================-->
+	<!--
+	BUG详情BEGIN
+	http://127.0.0.1:81/index.html#service?0056141
+	mecreate
+	-->	
+	<div data-role="page" id="service">
+		<div data-role="header" data-position="fixed">
+			<div id="header_l"><a href="javascript:void(0)" data-rel="back" data-transition="flip" id="service_back"><i class="fa fa-chevron-left fa-fw"></i></a></div>
+			<h1 class="fade" id="service_head_title">0056141 详情</h1>
+			<div id="header_r"><a href="javascript:void(0)"  data-transition="flip" id="service_refresh"><i class="fa fa-refresh fa-fw"></i></a></div>			
+		</div>
+		
+		<div data-role="content">
+			<div class="detailBlock">
+				<h4 class="fade" id="service_title">标题:会员和频道申请报表无法下载</h4>
+				<p class="fade" id="service_project">项目模块：BSP_会员服务平台</p>
+				<p class="fade" id="service_type">事件类型：BUG修改</p>
+				<p class="fade" id="service_fixtime">期望时间：20140910 19:00:00</p>
+				<p class="fade" id="service_import">严重程度：重要不紧急</p>
+				<p class="fade" id="service_assignto">指派人员：陈市明&lt;chenshiming&gt;</p>
+				<p class="fade" id="service_createuser">由谁创建：蔡蕾瑾</p><BR>
+			</div>
+
+			<div class="blackM"></div>
+
+			<div class="detailLine">
+				<h1>回复历史</h1>
+			</div>
+			<ul data-role="listview" data-inset="false" id="service_list">
+				<li>
+					<h2>2014-09-23 09:57 Opened BY 蔡蕾瑾</h2>
+					<p>bsp报表查询目录下的会员和频道申请报表无法下载。请查明原因并处理，谢谢！</p>
+				</li>
+				<li>
+					<h2>2014-09-23 10:01 Edited BY 陈市明</h2>
+					<p>处理中</p>
+				</li>	
+				<li>
+					<h2>2014-09-23 09:57 Opened BY 蔡蕾瑾</h2>
+					<p>违规操作报表：点按钮无效果，也不报错</p>
+				</li>							
+			</ul>
+		</div>
+		<div data-role="footer" data-position="fixed" id="service_f0">
+			<div data-role="navbar">
+				<ul>
+					<li>
+						<a href="javascript:void(0)" id="service_f0_editbt">编辑</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)" id="service_f0_fixbt">解决</a>
+					</li>								
+				</ul>
+			</div>
+		</div>	
+		<div data-role="footer" data-position="fixed" id="service_f1" style="display: none;">
+			<div data-role="fieldcontain">
+				<label for="text-basic-a" class="select">指派人员:</label>
+				<a href="#usersearch" data-rel="dialog">
+				<input type="text" readonly name="text-basic-a" id="service_f1_assignto_text" value=""></a>
+				<input type="hidden" id="service_f1_assignto" value="">
+				<label for="select-choice-b" class="select">常用处理意见:</label>
+				<select name="select-choice-b" id="service_f1_commonreply" >
+					<option></option>
+					<option>正在处理中，请等待！</option>
+					<option>问题已经解决，请重新试试!</option>
+					<option>该问题修复需要修改代码，建议下次发布，请修改下完成时间!</option>
+					<option>审批通过，请执行！</option>
+				</select>				
+				<label for="textarea">
+					处理意见:			
+				</label>				
+				<textarea cols="40" rows="8" name="textarea" id="service_f1_notes"></textarea>
+				<p style="text-align: center;">
+				<input type="button" data-inline="true" value="更新事件" id="service_f1_submit">		
+				<input type="button" data-inline="true" value="取消更新" id="service_f1_cancel"></div>		
+				</p>	
+		</div>
+		<div data-role="footer" data-position="fixed" id="service_f2" style="display: none;">
+			<div data-role="fieldcontain">
+				<label for="select-choice-a" class="select">解决方案:</label>
+				<select name="select-choice-a" id="service_f2_resolution">
+					<option value="Fix">Fix</option>
+					<option value="Not Fiex">Not Fiex</option>
+					<option value="Dulpicate">Dulpicate</option>
+				</select>
+				<label for="select-choice-b2" class="select">常用处理意见:</label>
+				<select name="select-choice-b2" id="service_f2_commonreply">
+					<option></option>
+					<option>问题已经解决，请重新试试!</option>
+					<option>问题重复，请关闭此问题！</option>
+				</select>				
+				<label for="textarea">
+					处理意见:			
+				</label>				
+				<textarea cols="40" rows="8" name="textarea" id="service_f2_notes"></textarea>
+				<p style="text-align: center;">
+				<input type="button" data-inline="true" value="解决事件" id="service_f2_submit">		
+				<input type="button" data-inline="true" value="取消更新" id="service_f2_cancel"></div>		
+				</p>	
+		</div>
+	</div>
+	<!--BUG详情END-->	
+    <script id="service_list_template" type="text/template">
+    <% _.each( collection, function( model, id ) { %>
+				<li class="ui-li-static ui-body-inherit ui-first-child ui-last-child"  style="word-wrap: break-word;word-break: break-all;">
+					<h2><%=model.actionDate%><BR><%=model.action%> BY <%=model.userName%></h2>
+					<p><%=model.fullInfo.replaceAll("\n","</p><p>")%></p>
+				</li>
+    <% }); %>
+    </script> 
+
+
+<!--===========================SEPERATE==============================-->
+	<!--
+	指派给我列表BEGIN
+	http://127.0.0.1:81/index.html#usersearch
+	mecreate
+	-->
+	<div data-role="page" id="usersearch" class="page">
+		<div data-role="header" data-position="fixed" >
+			<div id="header_l"><a class="servicesearch_div" href="javascript:void(0)" data-rel="back" data-transition="flip" id="servicessearch_back"><i class="fa fa-chevron-left fa-fw"></i></a></div>
+			<h1 id="service_head" class="fade">员工搜索</h1>
+			<div id="header_r"><a id="services_refresh" data-transition="flip"><i class="fa fa-refresh fa-fw"></i></a></div>
+			<input type="search" name="password" id="usersearch_input" value="" placeholder="请输入员工姓名或帐号">
+		</div>
+	
+		<div data-role="content">
+			<ul data-role="listview" data-inset="false" id="usersearch_list" class="fade">
+				<li class="usersearch_list_item">
+					<input type="hidden" class="realName_i" value="陈市明&lt;chenshiming&gt;">
+					<input type="hidden" class="userName_i" value="chenshiming">			
+					<div class="listView" userName="xxx">				 
+							<div class="listView_h">陈市明&lt;chenshiming&gt;</div>	
+					</div>
+				</li>															
+			</ul>
+		</div>
+	</div>
+	<script id="usersearch_list_template" type="text/template">
+	<% _.each( collection, function( model, id ) { %>
+				<li  class="usersearch_list_item ui-li-static ui-body-inherit ui-first-child ui-last-child">
+					<input type="hidden" class="realName_i" value="<%=model.realName%>">
+					<input type="hidden" class="userName_i" value="<%=model.userName%>">
+					<div class="listView">
+							<div class="listView_h"><%=model.realName%>&lt;<%=model.userName%>&gt;</div>	
+					</div>
+				</li>
+	<% }); %>
+	</script>	
+    <!--指派给我列表END-->
+<!--===========================SEPERATE==============================-->    
+	
 <!--===========================SEPERATE==============================-->
 <!--===========================SEPERATE==============================-->
 

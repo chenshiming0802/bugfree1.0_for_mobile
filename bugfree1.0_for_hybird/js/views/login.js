@@ -19,6 +19,10 @@ define([
         onLoad:function(viewName,params){  
             T.assertParamsLength(params,0);
             if(params.length>0&&params[0]=="logout"){
+                if(!confirm("是否确认退出")){
+                    return;
+                }
+
                 localStorage.userName='';
                 localStorage.userRealName='';
                 localStorage.bugUserEmail='';
@@ -36,13 +40,17 @@ define([
                 });
                 this.render(null);                 
             }
+            return true;
         },
         //渲染UI界面
         render:function(collection){
         },
         loginSubmit:function(){
+
             this.username = $("#login_username").val();
+            T.assertNotNull(this.username,"请输入帐号名");
             this.password = $("#login_password").val();
+            T.assertNotNull(this.password,"请输入密码");
             T.log("login:"+this.username+"/"+this.password);
             var that = this;
             var servcieName = "dologin2.php";
@@ -57,6 +65,8 @@ define([
                     localStorage.bugUserEmail=json.bugUserEmail;
                     localStorage.ucore1=json.ucore1;
                     that.toMainPage();
+                    $("#login_username").val("");
+                    $("#login_password").val("");
                 }                
             };
             var errorFunction = function(errorCode,errorMessage){

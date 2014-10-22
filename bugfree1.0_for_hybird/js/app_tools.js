@@ -1,6 +1,6 @@
 /*本项目用的工具类，不具有其他项目使用的特性*/
 var A = {
-	pageSize:10,
+	pageSize:20,
 	displayFooter:function(view,currentPageId){
 	    var f = $("script#common_footer_template").html(); 
 	    view.$el.append(f); 
@@ -44,5 +44,11 @@ var A = {
 				"ucore1":localStorage.ucore1
 			};			
 		}	
-	}
+	},
+    assertHasLogin:function (){
+        if(this.getUserSummary()==null){
+           T.redirect("#login");
+            return false;                   	
+        }
+    },	
 };

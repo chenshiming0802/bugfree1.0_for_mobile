@@ -1,5 +1,26 @@
 /*项目公共的Tools使用类,具有其他项目使用的特性*/
 var T = {
+    /*openDialog未测试通过*/
+    openDialog: function (options) {
+        var href = options.href || "about:blank";
+        var transition = options.transition || "none";
+        $('body').append("<a id='tPushDialog' href='" + options.href + "' data-rel=\"dialog\" data-transition=\"" + options.transition + "\" style='display:none;'>Open dialog</a> ");
+        $("#tPushDialog").trigger('click');
+        $('body').find('#tPushDialog').remove();
+         
+        
+    },    
+    alert:function(message){
+        window.alert(message);
+    },
+    isNextPageRefresh:true,
+    goBack:function(isNextPageRefresh){//T.isNextPageRefresh = false; 返回前面的页面，不调用onResume
+        if(isNextPageRefresh){
+            isNextPageRefresh = true;
+        }
+        this.isNextPageRefresh = isNextPageRefresh;
+        window.history.back();
+    },
     redirect:function(url){
         $.mobile.navigate(url, {
             transition: "slide",
@@ -139,4 +160,9 @@ var T = {
                 break;          
         }
     }   
+}
+
+
+String.prototype.replaceAll = function (s1, s2) { 
+    return this.replace(new RegExp(s1,"gm"),s2);
 }

@@ -22,11 +22,18 @@ define([
                 reverse: false,
                 changeHash: false
             });
-            this.render(null);
             */       
         },
+        onResume:function(viewName,params){  
+            //this.render(null);
+        }
         //渲染UI界面
         render:function(collection){
+            /*
+            this.template = _.template( $( "script#services_list_template" ).html(), { "collection": collection } );
+            $("#services_list").html(this.template);
+            */
+            return this;            
         }
     } );
     return View;

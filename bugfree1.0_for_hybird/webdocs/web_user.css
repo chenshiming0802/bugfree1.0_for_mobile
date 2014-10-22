@@ -1,0 +1,49 @@
+/*UI Core*/
+input{
+	background-color:#ffffff;
+	-moz-border-radius: 5px; 
+	border-radius: 5px; 
+}
+ul,li{
+	list-style-type: none;
+}
+div,ul,li{
+	padding: 0px;
+	margin: 0px;
+	background-color: #cccccc;/*默认背景色*/
+	border: 0px;
+	position: relative;	
+}
+/*body_content*/
+.spr-2{
+	position: relative;		
+}
+/*body_content中的first-child div/ul*/
+.spr-2 > div,
+.spr-2 > ul,
+.spr-2 > ul li{
+}
+/*.spr-2的test plugin*/
+.spr-2 > div.spr-2-text,
+.spr-2 > ul li,.spr-2-text{
+	padding: 10px;
+	background-color: #ffffff;
+	font-size: 12px;
+	border: 0px;
+	border: 1px solid #cccccc;
+}
+
+/*app*/
+.search_text{
+	float:left;
+	width:80%;
+	border-top: 1px solid #cccccc;
+	height:24px;
+}
+.search_button{
+	position:absolute;
+	right: 0px;
+	top: 10px;	
+}
+
+/*page*/
